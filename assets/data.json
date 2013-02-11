@@ -1,0 +1,16 @@
+[
+	{
+		"year": 1868,
+		"parties": {
+			"red": ["al", "ak", "ca", "ct", "il", "in", "id", "ks", "me", "ma", "mi", "mn", "ms", "mo", "ne", "nv", "nh", "nc", "oh", "ri", "sc", "tn", "vt", "wv", "wi"],
+			"blue": ["de", "fl", "ga", "ky", "la", "md", "nj", "ny", "or", "pa"]
+		}
+	},
+	{
+		"year": 1872,
+		"parties": {
+			"red": ["ma", "mi", "mn", "ms", "de", "fl", "ga", "ky", "mo", "ne", "nv", "nh", "nc", "oh", "ri", "sc", "tn", "vt", "wv", "wi"],
+			"blue": ["la", "md", "nj", "ny", "or", "pa", "al", "ak", "ca", "ct", "il", "in", "id", "ks", "me"]
+		}
+	}
+]

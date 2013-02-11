@@ -1,0 +1,1 @@
+(function(){console.log(":P");$.get("assets/data.json",function(e){$.each(e[0].red,function(e){console.log("log")})})})(jQuery);
