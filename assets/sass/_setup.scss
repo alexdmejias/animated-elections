@@ -20,28 +20,32 @@
 	        text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "liga=1";
 	 -ms-font-feature-settings: "liga" 1;
-	 -ms-font-feature-settings: "liga", "dlig"; 
+	 -ms-font-feature-settings: "liga", "dlig";
 	overflow: hidden;
 	width: 300px;
 	display: block;
 	margin: 0 auto;
 	padding: 0;
-	list-style: none;	
-	
-	li { 
+	list-style: none;
+
+	li {
   	float: left;
   	margin: -20% 0 0 -100%;
   	position: relative;
   	left: 101%;
   	width: 100%;
   	cursor: default;
-  	-webkit-transition: all 1s ease-in;
-  	-webkit-touch-callout: none;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-touch-callout: none;
   	-webkit-user-select: none;
   	 -khtml-user-select: none;
   	   -moz-user-select: none;
   	    -ms-user-select: none;
   	        user-select: none;
   }
-  
+
 } // .stately
