@@ -1,5 +1,42 @@
-/** Stately setup
-*************************************/
+/*modified yahoo reset http://developer.yahoo.com/yui/reset/*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\000033}}
+body, div, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\000038}}
+fieldset, img {
+  border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\0000312}}
+ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\0000316}}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\0000321}}
+q:before, q:after {
+  content: ''; }
+
+/*end reset*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\0000327}}
+body {
+  width: 300px;
+  margin: 0 auto;
+  font-family: "helvetica neue",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_reset\.scss}line{font-family:\0000336}}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0 6px;
+  color: #9d9d9d; }
+
 @font-face {
   font-family: 'stately-webfont';
   src: url("../font/stately-webfont.eot");
@@ -7,7 +44,7 @@
   font-weight: normal;
   font-style: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_setup\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_setup\.scss}line{font-family:\0000312}}
 .stately {
   font: normal normal 300px/100% "stately-webfont";
   font-size-adjust: none;
@@ -25,7 +62,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_setup\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_setup\.scss}line{font-family:\0000330}}
   .stately li {
     float: left;
     margin: -20% 0 0 -100%;
@@ -55,9 +92,17 @@
   border-top: 1px solid #dddddd; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000311}}
+li {
+  color: #f2f2f2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000314}}
 .blue {
   color: #00aeef; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000318}}
 .red {
   color: #ff7474; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000322}}
+.yellow {
+  color: #666666; }

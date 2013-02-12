@@ -2,15 +2,54 @@
 	{
 		"year": 1868,
 		"parties": {
-			"red": ["al", "ak", "ca", "ct", "il", "in", "id", "ks", "me", "ma", "mi", "mn", "ms", "mo", "ne", "nv", "nh", "nc", "oh", "ri", "sc", "tn", "vt", "wv", "wi"],
-			"blue": ["de", "fl", "ga", "ky", "la", "md", "nj", "ny", "or", "pa"]
+			"red": ["al", "ar", "ca", "ct", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "mo", "ne", "nv", "nh", "nc", "oh", "pa", "ri", "sc", "tn", "vt", "wv", "wi"],
+			"blue": ["de", "ga", "ky", "la", "md", "nj", "ny", "or"],
+			"yellow": ["va", "tx", "ms"]
+
 		}
 	},
 	{
 		"year": 1872,
 		"parties": {
-			"red": ["ma", "mi", "mn", "ms", "de", "fl", "ga", "ky", "mo", "ne", "nv", "nh", "nc", "oh", "ri", "sc", "tn", "vt", "wv", "wi"],
-			"blue": ["la", "md", "nj", "ny", "or", "pa", "al", "ak", "ca", "ct", "il", "in", "id", "ks", "me"]
+			"red": ["al", "ca", "ct", "de", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "ms", "ne", "nv", "nh", "nj", "ny", "nc", "oh", "or", "pa", "ri", "sc", "vt", "va", "wv", "wi"],
+			"blue": ["md", "tn", "tx"],
+			"yellow": ["ar", "ga", "ky", "la", "mo"]
+		}
+	},
+	{
+		"year": 1876,
+		"parties": {
+			"red": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "la", "wi", "il", "mi", "oh", "pa", "sc", "fl", "vt", "nh", "me", "ma", "ri"],
+			"blue": ["tx", "ar", "mo", "ms", "al", "ga", "tn", "mo", "ky", "in", "wv", "va", "nc", "md", "de", "nj", "ny", "ct"]
+		}
+	},
+	{
+		"year": 1880,
+		"parties": {
+			"red": ["or", "co", "ne", "ks", "ia", "mn", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ny", "ri"],
+			"blue": ["ca", "nv", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "tn", "ky", "wv", "va", "md", "de", "nj"]
+		}
+	},
+	{
+		"year": 1884,
+		"parties": {
+			"red": ["ca", "or", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "mi", "oh", "pa", "vt", "nh", "me", "ma", "ri"],
+			"blue": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "in", "ky", "tn", "wv", "va", "nc", "sc", "md", "de", "nj", "ny", "ct"]
+		}
+	},
+	{
+		"year": 1888,
+		"parties": {
+			"red": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ri"],
+			"blue": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "tn", "ky", "wv", "va", "nc", "sc", "md", "de", "nj", "ct"]
+		}
+	},
+	{
+		"year": 1892,
+		"parties": {
+			"red": ["wa", "or", "mt", "wy", "sd", "ne", "mn", "ia", "oh", "pa", "vt", "nh", "me", "ma", "ri", "mi"],
+			"blue": ["ca", "tx", "mo", "ar", "la", "wi", "il", "in", "ky", "tn", "ms", "al", "ga", "fl", "sc", "nc", "wv", "va", "md", "de", "nj", "ny", "ct", "nd"],
+			"yellow": ["nv", "id", "co", "ks"]
 		}
 	}
 ]

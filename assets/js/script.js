@@ -2,8 +2,8 @@ gdata ='';
 election = 0;
 $.get('assets/data.json', function(data) {
 	gdata = data;
-	console.log('the data was retrieved');
-	color_all(0);
+	color_all(election);
+	change_year(election);
 });
 
 function make_selector(arr) {
@@ -16,25 +16,29 @@ function color_states(index, color, is_class) {
 }
 
 function reset() {
-	$('#election li').removeClass('blue red');
+	$('#election li').removeClass('blue red yellow');
 }
 
 function color_all(index) {
-	console.log('the election before is ' + election);
 	for(var party in gdata[index].parties) {
 		color_states(gdata[index].parties[party], party);
 	}
-	console.log('election is now ' + election);
+}
+
+function change_year(election) {
+	$('#year').text(gdata[election].year);
 }
 
 $('#next').on('click', function(){
 	reset();
 	election++;
 	color_all(election);
+	change_year(election);
 });
 
 $('#prev').on('click', function(){
 	reset();
 	election--;
 	color_all(election);
+	change_year(election);
 });
