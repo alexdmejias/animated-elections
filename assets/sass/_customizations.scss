@@ -7,7 +7,8 @@
 
 $red: #ff7474;
 $blue: #00aeef;
-$yellow: #666;
+$yellow: #F7F720;
+$other: #666;
 li {
 	color: #f2f2f2;
 }
@@ -21,4 +22,8 @@ li {
 
 .yellow {
 	color: $yellow;
+}
+
+.other {
+	color: $other;
 }

@@ -4,7 +4,7 @@
 		"parties": {
 			"red": ["al", "ar", "ca", "ct", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "mo", "ne", "nv", "nh", "nc", "oh", "pa", "ri", "sc", "tn", "vt", "wv", "wi"],
 			"blue": ["de", "ga", "ky", "la", "md", "nj", "ny", "or"],
-			"yellow": ["va", "tx", "ms"]
+			"other": ["va", "tx", "ms"]
 
 		}
 	},
@@ -12,8 +12,8 @@
 		"year": 1872,
 		"parties": {
 			"red": ["al", "ca", "ct", "de", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "ms", "ne", "nv", "nh", "nj", "ny", "nc", "oh", "or", "pa", "ri", "sc", "vt", "va", "wv", "wi"],
-			"blue": ["md", "tn", "tx"],
-			"yellow": ["ar", "ga", "ky", "la", "mo"]
+			"blue": [ "tx", "mo", "tn", "ky", "ga", "md"],
+			"yellow": ["ar", "la"]
 		}
 	},
 	{
@@ -64,6 +64,28 @@
 		"parties": {
 			"red": ["wa", "or", "ca", "ut", "wy", "nd", "sd", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "wv", "pa", "md", "de", "nj", "ny", "ct", "ma", "vt", "nh", "ma", "me"],
 			"blue": ["mt", "id", "nv", "co", "tx", "mo", "ar", "la", "ms", "ky", "tn", "al", "ga", "fl", "sc", "nc", "va"]
+		}
+	},
+	{
+		"year": 1904,
+		"parties": {
+			"red": ["wa", "or", "ca", "id", "nv", "mt", "wy", "ut", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wi", "il", "in", "mi", "oh", "wv", "pa", "ny", "nj", "de", "ct", "ma", "ri", "vt", "nh", "me"],
+			"blue": [ "tx", "ar", "la", "ms", "al", "ga", "fl", "tn", "ky", "sc", "nc", "va", "md"]
+		}
+	},
+	{
+		"year": 1908,
+		"parties": {
+			"red": ["wa", "or", "ca", "id", "mt", "wy", "ut", "nd", "sd", "ks", "mn", "ia", "mo", "wi", "il", "mi", "in", "oh", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "de"],
+			"blue": ["nv", "co", "ne", "ok", "tx", "ar", "la", "ms", "al", "ga", "fl", "ky", "tn", "sc", "nc", "va", "md"]
+		}
+	},
+	{
+		"year": 1912,
+		"parties": {
+			"red": ["ut", "vt"],
+			"blue": ["or", "nv", "id", "mt", "wy", "co", "nm", "nd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "wi", "il", "ms", "in", "ky", "tn", "ms", "oh", "al", "fl", "ga", "sc", "nc", "va", "wv", "ny", "md", "de", "nj", "ct", "ma", "ri", "nh", "me"],
+			"yellow": ["wa", "ca", "sd", "mn", "mi", "pa"]
 		}
 	}
 ]

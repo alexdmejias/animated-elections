@@ -16,7 +16,7 @@ function color_states(index, color, is_class) {
 }
 
 function reset() {
-	$('#election li').removeClass('blue red yellow');
+	$('#election li').removeClass('blue red yellow other');
 }
 
 function color_all(index) {

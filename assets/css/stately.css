@@ -91,18 +91,22 @@ h1 {
   border-radius: 10px;
   border-top: 1px solid #dddddd; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000312}}
 li {
   color: #f2f2f2; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000315}}
 .blue {
   color: #00aeef; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000319}}
 .red {
   color: #ff7474; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000323}}
 .yellow {
+  color: #f7f720; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/stately\/assets\/sass\/_customizations\.scss}line{font-family:\0000327}}
+.other {
   color: #666666; }
