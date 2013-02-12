@@ -1,9 +1,10 @@
 gdata ='';
 election = 0;
+slider = $("#slider");
 $.get('assets/data.json', function(data) {
 	gdata = data;
-	color_all(election);
-	change_year(election);
+	refresh_all(election);
+	$(slider).slider( "option", "max", gdata.length - 1);
 });
 
 function make_selector(arr) {
@@ -29,16 +30,31 @@ function change_year(election) {
 	$('#year').text(gdata[election].year);
 }
 
-$('#next').on('click', function(){
+function refresh_all(value) {
 	reset();
+	color_all(value);
+	change_year(value);
+}
+
+$('#next').on('click', function(){
 	election++;
-	color_all(election);
-	change_year(election);
+	$("#slider").slider("value", election);
+	refresh_all(election);
 });
 
 $('#prev').on('click', function(){
-	reset();
 	election--;
-	color_all(election);
-	change_year(election);
+	$("#slider").slider("value", election);
+	refresh_all(election);
+});
+
+$(slider).slider({
+	range: false,
+	min: 0,
+	step: 1,
+	animate: "fast",
+	change: function(event, ui) {
+		election = ui.value;
+		refresh_all(election);
+	}
 });

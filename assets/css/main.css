@@ -1,0 +1,139 @@
+/*modified yahoo reset http://developer.yahoo.com/yui/reset/*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_reset\.scss}line{font-family:\000032}}
+body, div, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_reset\.scss}line{font-family:\000037}}
+fieldset, img {
+  border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_reset\.scss}line{font-family:\0000311}}
+ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_reset\.scss}line{font-family:\0000315}}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_reset\.scss}line{font-family:\0000320}}
+q:before, q:after {
+  content: ''; }
+
+@font-face {
+  font-family: 'stately-webfont';
+  src: url("../font/stately-webfont.eot");
+  src: url("../font/stately-webfont.eot?#iefix") format("embedded-opentype"), url("../font/stately-webfont.woff") format("woff"), url("../font/stately-webfont.ttf") format("truetype"), url("../font/stately-webfont.svg#testfontRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_setup\.scss}line{font-family:\0000312}}
+.stately {
+  font-size: 600px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  font-family: "stately-webfont";
+  font-size-adjust: none;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga" 1;
+  -ms-font-feature-settings: "liga", "dlig";
+  overflow: hidden;
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_setup\.scss}line{font-family:\0000334}}
+  .stately li {
+    float: left;
+    margin: -20% 0 0 -100%;
+    position: relative;
+    left: 101%;
+    width: 100%;
+    cursor: default;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+/** Style customizations
+*************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\000031}}
+body {
+  width: 600px;
+  margin: 0 auto;
+  font-family: "helvetica neue",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000310}}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0 6px;
+  color: #9d9d9d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000317}}
+h2 {
+  display: inline-block;
+  padding: 7px 15px;
+  background: #ccc;
+  border-radius: 8px;
+  border: 1px solid #777777;
+  cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000324}}
+  h2:hover {
+    background: #666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000329}}
+#next {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000333}}
+#slider {
+  margin-top: 20px;
+  background: #ccc;
+  border: 1px solid #777777;
+  border-radius: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000338}}
+  #slider a {
+    background: #999;
+    border: 1px solid #888888;
+    border-radius: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000342}}
+    #slider a:hover {
+      background: #666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000349}}
+li {
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000350}}
+.blue {
+  color: #00aeef; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000351}}
+.red {
+  color: #ff7474; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000352}}
+.yellow {
+  color: #f7f720; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/Dropbox\/www\/animated-elections\/assets\/sass\/_customizations\.scss}line{font-family:\0000353}}
+.other {
+  color: #666666; }

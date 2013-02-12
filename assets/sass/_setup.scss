@@ -10,7 +10,11 @@
 }
 
 .stately {
-  font: normal normal 300px/100% "stately-webfont";
+  font-size: $width;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  font-family: "stately-webfont";
 	font-size-adjust: none;
 	-webkit-text-rendering: optimizeLegibility;
 	   -moz-text-rendering: optimizeLegibility;
@@ -21,7 +25,7 @@
 	 -ms-font-feature-settings: "liga" 1;
 	 -ms-font-feature-settings: "liga", "dlig";
 	overflow: hidden;
-	width: 300px;
+	width: $width;
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -46,5 +50,4 @@
   	    -ms-user-select: none;
   	        user-select: none;
   }
-
-} // .stately
+}
