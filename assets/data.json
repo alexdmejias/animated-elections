@@ -51,5 +51,19 @@
 			"blue": ["ca", "tx", "mo", "ar", "la", "wi", "il", "in", "ky", "tn", "ms", "al", "ga", "fl", "sc", "nc", "wv", "va", "md", "de", "nj", "ny", "ct", "nd"],
 			"yellow": ["nv", "id", "co", "ks"]
 		}
+	},
+	{
+		"year": 1896,
+		"parties": {
+			"red": ["ca", "or", "nd", "mn", "ia", "wi", "il", "mi", "in", "ky", "oh", "wv", "pa", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "ny"],
+			"blue": ["wa", "mt", "id", "wy", "sd", "ne", "nv", "ut", "co", "ks", "tx", "mo", "ar", "al", "ms", "tn", "al", "ga", "fl", "sc", "nc", "va"]
+		}
+	},
+	{
+		"year": 1900,
+		"parties": {
+			"red": ["wa", "or", "ca", "ut", "wy", "nd", "sd", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "wv", "pa", "md", "de", "nj", "ny", "ct", "ma", "vt", "nh", "ma", "me"],
+			"blue": ["mt", "id", "nv", "co", "tx", "mo", "ar", "la", "ms", "ky", "tn", "al", "ga", "fl", "sc", "nc", "va"]
+		}
 	}
 ]
