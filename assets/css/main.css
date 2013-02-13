@@ -1,36 +1,42 @@
 /*modified yahoo reset http://developer.yahoo.com/yui/reset/*/
-/* line 2, /Users/alex/Dropbox/www/animated-elections/assets/sass/_reset.scss */
+/* line 2, ../sass/_reset.scss */
 body, div, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 7, /Users/alex/Dropbox/www/animated-elections/assets/sass/_reset.scss */
+/* line 7, ../sass/_reset.scss */
 fieldset, img {
-  border: 0; }
+  border: 0;
+}
 
-/* line 11, /Users/alex/Dropbox/www/animated-elections/assets/sass/_reset.scss */
+/* line 11, ../sass/_reset.scss */
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 15, /Users/alex/Dropbox/www/animated-elections/assets/sass/_reset.scss */
+/* line 15, ../sass/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
-/* line 20, /Users/alex/Dropbox/www/animated-elections/assets/sass/_reset.scss */
+/* line 20, ../sass/_reset.scss */
 q:before, q:after {
-  content: ''; }
+  content: '';
+}
 
 @font-face {
   font-family: 'stately-webfont';
   src: url("../font/stately-webfont.eot");
   src: url("../font/stately-webfont.eot?#iefix") format("embedded-opentype"), url("../font/stately-webfont.woff") format("woff"), url("../font/stately-webfont.ttf") format("truetype"), url("../font/stately-webfont.svg#testfontRegular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
-/* line 12, /Users/alex/Dropbox/www/animated-elections/assets/sass/_setup.scss */
+/* line 12, ../sass/_setup.scss */
 .stately {
-  font-size: 600px;
+  font-size: 700px;
   font-style: normal;
   font-weight: normal;
   line-height: 100%;
@@ -45,95 +51,110 @@ q:before, q:after {
   -ms-font-feature-settings: "liga" 1;
   -ms-font-feature-settings: "liga", "dlig";
   overflow: hidden;
-  width: 600px;
+  width: 700px;
   display: block;
   margin: 0 auto;
   padding: 0;
-  list-style: none; }
-  /* line 34, /Users/alex/Dropbox/www/animated-elections/assets/sass/_setup.scss */
-  .stately li {
-    float: left;
-    margin: -20% 0 0 -100%;
-    position: relative;
-    left: 101%;
-    width: 100%;
-    cursor: default;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
+  list-style: none;
+}
+/* line 34, ../sass/_setup.scss */
+.stately li {
+  float: left;
+  margin: -20% 0 0 -100%;
+  position: relative;
+  left: 101%;
+  width: 100%;
+  cursor: default;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 /** Style customizations
 *************************************/
-/* line 1, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 1, ../sass/_customizations.scss */
 body {
-  width: 600px;
+  width: 700px;
   margin: 0 auto;
   font-family: "helvetica neue",arial,sans-serif;
   -webkit-font-smoothing: antialiased;
-  padding: 0 0 40px; }
+  padding: 0 0 40px;
+}
 
-/* line 10, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 10, ../sass/_customizations.scss */
 h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 24px 0 6px;
-  color: #9d9d9d; }
+  color: #9d9d9d;
+}
 
-/* line 17, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 17, ../sass/_customizations.scss */
 h2 {
   display: inline-block;
   padding: 7px 15px;
   background: #ccc;
   border-radius: 8px;
   border: 1px solid #777777;
-  cursor: pointer; }
-  /* line 24, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
-  h2:hover {
-    background: #666; }
+  cursor: pointer;
+}
+/* line 24, ../sass/_customizations.scss */
+h2:hover {
+  background: #666;
+}
 
-/* line 29, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 29, ../sass/_customizations.scss */
 #next {
-  float: right; }
+  float: right;
+}
 
-/* line 33, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 33, ../sass/_customizations.scss */
 #slider {
   margin-top: 20px;
   background: #ccc;
   border: 1px solid #777777;
-  border-radius: 6px; }
-  /* line 38, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
-  #slider a {
-    background: #999;
-    border: 1px solid #888888;
-    border-radius: 6px; }
-    /* line 42, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
-    #slider a:hover {
-      background: #666; }
+  border-radius: 6px;
+}
+/* line 38, ../sass/_customizations.scss */
+#slider a {
+  background: #999;
+  border: 1px solid #888888;
+  border-radius: 6px;
+}
+/* line 42, ../sass/_customizations.scss */
+#slider a:hover {
+  background: #666;
+}
 
-/* line 48, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 48, ../sass/_customizations.scss */
 li {
-  color: #fff; }
+  color: #fff;
+}
 
-/* line 49, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 49, ../sass/_customizations.scss */
 .blue {
-  color: #00aeef; }
+  color: #00aeef;
+}
 
-/* line 50, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 50, ../sass/_customizations.scss */
 .red {
-  color: #ff7474; }
+  color: #ff7474;
+}
 
-/* line 51, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 51, ../sass/_customizations.scss */
 .yellow {
-  color: #f7f720; }
+  color: #f7f720;
+}
 
-/* line 52, /Users/alex/Dropbox/www/animated-elections/assets/sass/_customizations.scss */
+/* line 52, ../sass/_customizations.scss */
 .other {
-  color: #666666; }
+  color: #666666;
+}

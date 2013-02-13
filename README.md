@@ -3,7 +3,8 @@ making an animation of all of the elections
 * and a quick fact about the election
 * maybe some other data
 * party names
-* better way to stablish colors
+* legend
 * routing to more quickly navigate to years
 * implement requirejs
-* add wikipedia page
+* DONE - add wikipedia page
+* eventually transfer to mongo/express
