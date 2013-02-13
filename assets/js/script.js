@@ -1,61 +1,62 @@
-gdata ='';
-election = 0;
-slider = $("#slider");
-$.get('assets/data.json', function(data) {
-	gdata = data;
-	refresh_all(election);
-	$(slider).slider( "option", "max", gdata.length - 1);
-	$('#range').text('The data set starts in ' + gdata[0].year + ' and it ends in the year ' + gdata[gdata.length - 1].year);
-});
+App = {
+	gdata: '',
+	election: 0,
+	slider: $('#slider'),
+	get: $.get('assets/data.json', function(data) {
+			App.gdata = data;
+			App.refresh_all(App.election);
+			$(slider).slider( "option", "max", App.gdata.length - 1);
+			$('#range').text('The data set starts in ' + App.gdata[0].year + ' and it ends in the year ' + App.gdata[App.gdata.length - 1].year);
+	}),
+	make_selector: function(arr) {
+		return  "." + arr.join(", .");
+	},
 
-function make_selector(arr) {
-	return  "." + arr.join(", .");
-}
+	color_states: function(index, color, is_class) {
+		is_class = typeof a !== 'undefined' ? a: true
+		$(App.make_selector(index)).addClass(color);
+	},
 
-function color_states(index, color, is_class) {
-	is_class = typeof a !== 'undefined' ? a: true
-	$(make_selector(index)).addClass(color);
-}
+	reset: function () {
+		$('#election li').removeClass('blue red yellow other');
+	},
 
-function reset() {
-	$('#election li').removeClass('blue red yellow other');
-}
+	color_all: function (index) {
+		for(var party in App.gdata[index].parties) {
+			App.color_states(App.gdata[index].parties[party], party);
+		}
+	},
 
-function color_all(index) {
-	for(var party in gdata[index].parties) {
-		color_states(gdata[index].parties[party], party);
-	}
-}
+	change_year: function (election) {
+		$('#year').text(App.gdata[election].year);
+	},
 
-function change_year(election) {
-	$('#year').text(gdata[election].year);
-}
-
-function refresh_all(value) {
-	reset();
-	color_all(value);
-	change_year(value);
-}
+	refresh_all: function (value) {
+		App.reset();
+		App.color_all(value);
+		App.change_year(value);
+	},
+};
 
 $('#next').on('click', function(){
-	election++;
-	$("#slider").slider("value", election);
-	refresh_all(election);
+	App.election++;
+	$(App.slider).slider("value", App.election);
+	App.refresh_all(App.election);
 });
 
 $('#prev').on('click', function(){
-	election--;
-	$("#slider").slider("value", election);
-	refresh_all(election);
+	App.election--;
+	$(App.slider).slider("value", App.election);
+	refresh_all(App.election);
 });
 
-$(slider).slider({
+$(App.slider).slider({
 	range: false,
 	min: 0,
 	step: 1,
 	animate: "fast",
 	change: function(event, ui) {
-		election = ui.value;
-		refresh_all(election);
+		App.election = ui.value;
+		App.refresh_all(App.election);
 	}
 });
