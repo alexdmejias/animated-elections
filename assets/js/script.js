@@ -5,6 +5,7 @@ $.get('assets/data.json', function(data) {
 	gdata = data;
 	refresh_all(election);
 	$(slider).slider( "option", "max", gdata.length - 1);
+	$('#range').text('The data set starts in ' + gdata[0].year + ' and it ends in the year ' + gdata[gdata.length - 1].year);
 });
 
 function make_selector(arr) {

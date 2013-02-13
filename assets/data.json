@@ -94,6 +94,42 @@
 			"red": ["or", "sd", "mn", "ia", "wi", "il", "in", "mi", "wv", "pa", "ny", "vt", "me", "ma", "ct", "ri", "nj", "de"],
 			"blue": ["wa", "ca", "nv", "id", "mt", "wy", "ut", "az", "co", "nm", "nd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky", "tn", "oh", "md", "nh"]
 		}
+	},
+	{
+		"year": 1920,
+		"parties": {
+			"red": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "ok", "mn", "ia", "mo", "wo", "il", "tn", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me"],
+			"blue": ["tx", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky"]
+		}
+	},
+	{
+		"year": 1924,
+		"parties": {
+			"red": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wo", "il", "ky", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me"],
+			"blue": ["tx", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "tn", "ok"],
+			"yellow": ["wi"]
+		}
+	},
+	{
+		"year": 1928,
+		"parties": {
+			"red": ["ak", "az", "ca", "co", "ct", "de", "fl", "hi", "id", "il", "in", "ia", "ks", "ky", "me", "md", "mi", "mn", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"],
+			"blue": ["ar", "la", "ms", "al", "ga", "sc", "ma"]
+		}
+	},
+	{
+		"year": 1932,
+		"parties": {
+			"red": ["pa", "de", "vt", "ct", "nh", "me"],
+			"blue": ["al", "az", "ar", "ca", "co", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
+		}
+	},
+	{
+		"year": 1936,
+		"parties": {
+			"red": ["vt", "me"],
+			"blue": ["al", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
+		}
 	}
 ]
 
