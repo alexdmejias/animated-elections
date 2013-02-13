@@ -98,7 +98,7 @@
 	{
 		"year": 1920,
 		"parties": {
-			"red": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "ok", "mn", "ia", "mo", "wo", "il", "tn", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me"],
+			"red": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "ok", "mn", "ia", "mo", "wo", "il", "tn", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "wi"],
 			"blue": ["tx", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky"]
 		}
 	},
