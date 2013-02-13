@@ -4,3 +4,6 @@ making an animation of all of the elections
 * maybe some other data
 * party names
 * better way to stablish colors
+* routing to more quickly navigate to years
+* implement requirejs
+* add wikipedia page
