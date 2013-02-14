@@ -1,135 +1,178 @@
 [
 	{
 		"year": 1868,
-		"parties": {
-			"red": ["al", "ar", "ca", "ct", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "mo", "ne", "nv", "nh", "nc", "oh", "pa", "ri", "sc", "tn", "vt", "wv", "wi"],
-			"blue": ["de", "ga", "ky", "la", "md", "nj", "ny", "or"],
-			"other": ["va", "tx", "ms"]
-
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"position": "winner",
+				"candidate": "Ulysses S. Grant",
+				"total_votes": 214,
+				"states": ["al", "ar", "ca", "ct", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "mo", "ne", "nv", "nh", "nc", "oh", "pa", "ri", "sc", "tn", "vt", "wv", "wi"]
+			},
+			{
+				"name": "Democatric",
+				"color": "blue",
+				"candidate": "Horatio Seymour",
+				"total_votes": 80,
+				"states": ["de", "ga", "ky", "la", "md", "nj", "ny", "or"]
+			},
+			{
+				"name": "other",
+				"color": "other",
+				"states": ["va", "tx", "ms"]
+			}
+		]
 	},
 	{
 		"year": 1872,
-		"parties": {
-			"red": ["al", "ca", "ct", "de", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "ms", "ne", "nv", "nh", "nj", "ny", "nc", "oh", "or", "pa", "ri", "sc", "vt", "va", "wv", "wi"],
-			"blue": [ "tx", "mo", "tn", "ky", "ga", "md"],
-			"yellow": ["ar", "la"]
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"position": "winner",
+				"candidate": "Ulysses S. Grant",
+				"total_votes": 286,
+				"states": ["al", "ca", "ct", "de", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "ms", "ne", "nv", "nh", "nj", "ny", "nc", "oh", "or", "pa", "ri", "sc", "vt", "va", "wv", "wi"]
+			},
+			{
+				"name": "Democatric",
+				"color": "blue",
+				"candidate": "Thomas A. Hendricks",
+				"total_votes": 42,
+				"states": [ "tx", "mo", "tn", "ky", "ga", "md"]
+			},
+			{
+				"name": "other",
+				"color": "other",
+				"candidate": "",
+				"states": ["ar", "la"]
+			}
+		]
 	},
 	{
 		"year": 1876,
-		"parties": {
-			"red": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "la", "wi", "il", "mi", "oh", "pa", "sc", "fl", "vt", "nh", "me", "ma", "ri"],
-			"blue": ["tx", "ar", "mo", "ms", "al", "ga", "tn", "mo", "ky", "in", "wv", "va", "nc", "md", "de", "nj", "ny", "ct"]
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"position": "winner",
+				"candidate": "Rutherford B. Hayes",
+				"total_votes": 185,
+				"states": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "la", "wi", "il", "mi", "oh", "pa", "sc", "fl", "vt", "nh", "me", "ma", "ri"]
+			},
+			{
+				"name": "Democatric",
+				"color": "blue",
+				"candidate": "Samuel J. Tilden",
+				"total_votes": 184,
+				"states": ["tx", "ar", "mo", "ms", "al", "ga", "tn", "mo", "ky", "in", "wv", "va", "nc", "md", "de", "nj", "ny", "ct"]
+			}
+		]
 	},
 	{
 		"year": 1880,
-		"parties": {
-			"red": ["or", "co", "ne", "ks", "ia", "mn", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ny", "ri"],
-			"blue": ["ca", "nv", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "tn", "ky", "wv", "va", "md", "de", "nj"]
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"position": "winner",
+				"candidate": "James A. Garfield",
+				"total_votes": 214,
+				"states": ["or", "co", "ne", "ks", "ia", "mn", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ny", "ri"]
+			},
+			{
+				"name": "Democatric",
+				"color": "blue",
+				"candidate": "Winfield S. Hancock",
+				"total_votes": 155,
+				"states": ["ca", "nv", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "tn", "ky", "wv", "va", "md", "de", "nj"]
+			}
+		]
 	},
 	{
 		"year": 1884,
-		"parties": {
-			"red": ["ca", "or", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "mi", "oh", "pa", "vt", "nh", "me", "ma", "ri"],
-			"blue": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "in", "ky", "tn", "wv", "va", "nc", "sc", "md", "de", "nj", "ny", "ct"]
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": " James G. Blaine",
+				"total_votes": 182,
+				"states": ["ca", "or", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "mi", "oh", "pa", "vt", "nh", "me", "ma", "ri"]
+			},
+			{
+				"name": "Democatric",
+				"color": "blue",
+				"position": "winner",
+				"candidate": " Grover Cleveland",
+				"total_votes": 219,
+				"states": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "in", "ky", "tn", "wv", "va", "nc", "sc", "md", "de", "nj", "ny", "ct"]
+			}
+		]
 	},
 	{
 		"year": 1888,
-		"parties": {
-			"red": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ri"],
-			"blue": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "tn", "ky", "wv", "va", "nc", "sc", "md", "de", "nj", "ct"]
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"position": "winner",
+				"candidate": "Benjamin Harrison",
+				"total_votes": 233,
+				"states": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ri"]
+			},
+			{
+				"name": "Democatric",
+				"color": "blue",
+				"candidate": " Grover Cleveland",
+				"total_votes": 168,
+				"states": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "tn", "ky", "wv", "va", "nc", "sc", "md", "de", "nj", "ct"]
+			}
+		]
 	},
 	{
 		"year": 1892,
-		"parties": {
-			"red": ["wa", "or", "mt", "wy", "sd", "ne", "mn", "ia", "oh", "pa", "vt", "nh", "me", "ma", "ri", "mi"],
-			"blue": ["ca", "tx", "mo", "ar", "la", "wi", "il", "in", "ky", "tn", "ms", "al", "ga", "fl", "sc", "nc", "wv", "va", "md", "de", "nj", "ny", "ct", "nd"],
-			"yellow": ["nv", "id", "co", "ks"]
-		}
-	},
-	{
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Benjamin Harrison",
+				"total_votes": 145,
+				"states": ["wa", "or", "mt", "wy", "sd", "ne", "mn", "ia", "oh", "pa", "vt", "nh", "me", "ma", "ri", "mi"]
+			},
+			{
+				"name": "Democatric",
+				"position": "winner",
+				"color": "blue",
+				"candidate": "Grover Cleveland",
+				"total_votes": 277,
+				"states": ["ca", "tx", "mo", "ar", "la", "wi", "il", "in", "ky", "tn", "ms", "al", "ga", "fl", "sc", "nc", "wv", "va", "md", "de", "nj", "ny", "ct", "nd"]
+			},
+			{	"name": "People's",
+				"color": "yellow",
+				"candidate": "James B. Weaver",
+				"total_votes": 22,
+				"states": ["nv", "id", "co", "ks"]
+			}
+		]
+	}
 		"year": 1896,
-		"parties": {
-			"red": ["ca", "or", "nd", "mn", "ia", "wi", "il", "mi", "in", "ky", "oh", "wv", "pa", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "ny"],
-			"blue": ["wa", "mt", "id", "wy", "sd", "ne", "nv", "ut", "co", "ks", "tx", "mo", "ar", "al", "ms", "tn", "al", "ga", "fl", "sc", "nc", "va"]
-		}
-	},
-	{
-		"year": 1900,
-		"parties": {
-			"red": ["wa", "or", "ca", "ut", "wy", "nd", "sd", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "wv", "pa", "md", "de", "nj", "ny", "ct", "ma", "vt", "nh", "ma", "me"],
-			"blue": ["mt", "id", "nv", "co", "tx", "mo", "ar", "la", "ms", "ky", "tn", "al", "ga", "fl", "sc", "nc", "va"]
-		}
-	},
-	{
-		"year": 1904,
-		"parties": {
-			"red": ["wa", "or", "ca", "id", "nv", "mt", "wy", "ut", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wi", "il", "in", "mi", "oh", "wv", "pa", "ny", "nj", "de", "ct", "ma", "ri", "vt", "nh", "me"],
-			"blue": [ "tx", "ar", "la", "ms", "al", "ga", "fl", "tn", "ky", "sc", "nc", "va", "md"]
-		}
-	},
-	{
-		"year": 1908,
-		"parties": {
-			"red": ["wa", "or", "ca", "id", "mt", "wy", "ut", "nd", "sd", "ks", "mn", "ia", "mo", "wi", "il", "mi", "in", "oh", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "de"],
-			"blue": ["nv", "co", "ne", "ok", "tx", "ar", "la", "ms", "al", "ga", "fl", "ky", "tn", "sc", "nc", "va", "md"]
-		}
-	},
-	{
-		"year": 1912,
-		"parties": {
-			"red": ["ut", "vt"],
-			"blue": ["or", "nv", "id", "mt", "wy", "co", "nm", "nd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "wi", "il", "ms", "in", "ky", "tn", "ms", "oh", "al", "fl", "ga", "sc", "nc", "va", "wv", "ny", "md", "de", "nj", "ct", "ma", "ri", "nh", "me"],
-			"yellow": ["wa", "ca", "sd", "mn", "mi", "pa"]
-		}
-	},
-	{
-		"year": 1916,
-		"parties": {
-			"red": ["or", "sd", "mn", "ia", "wi", "il", "in", "mi", "wv", "pa", "ny", "vt", "me", "ma", "ct", "ri", "nj", "de"],
-			"blue": ["wa", "ca", "nv", "id", "mt", "wy", "ut", "az", "co", "nm", "nd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky", "tn", "oh", "md", "nh"]
-		}
-	},
-	{
-		"year": 1920,
-		"parties": {
-			"red": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "ok", "mn", "ia", "mo", "wo", "il", "tn", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "wi"],
-			"blue": ["tx", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky"]
-		}
-	},
-	{
-		"year": 1924,
-		"parties": {
-			"red": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wo", "il", "ky", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me"],
-			"blue": ["tx", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "tn", "ok"],
-			"yellow": ["wi"]
-		}
-	},
-	{
-		"year": 1928,
-		"parties": {
-			"red": ["ak", "az", "ca", "co", "ct", "de", "fl", "hi", "id", "il", "in", "ia", "ks", "ky", "me", "md", "mi", "mn", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"],
-			"blue": ["ar", "la", "ms", "al", "ga", "sc", "ma"]
-		}
-	},
-	{
-		"year": 1932,
-		"parties": {
-			"red": ["pa", "de", "vt", "ct", "nh", "me"],
-			"blue": ["al", "az", "ar", "ca", "co", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
-		}
-	},
-	{
-		"year": 1936,
-		"parties": {
-			"red": ["vt", "me"],
-			"blue": ["al", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
-		}
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"position": "winner",
+				"candidate": " William McKinley	",
+				"total_votes": 271,
+				"states": ["ca", "or", "nd", "mn", "ia", "wi", "il", "mi", "in", "ky", "oh", "wv", "pa", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "ny"]
+			},
+			{
+				"name": "Democrat-Populist",
+				"color": "blue",
+				"candidate": "William J. Bryan",
+				"total_votes": 176,
+				"states": ["wa", "mt", "id", "wy", "sd", "ne", "nv", "ut", "co", "ks", "tx", "mo", "ar", "al", "ms", "tn", "al", "ga", "fl", "sc", "nc", "va"]
+			}
+		]
 	}
 ]
-

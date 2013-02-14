@@ -7,33 +7,34 @@ App = {
 			App.gdata = data;
 			App.refresh_all(App.current_election_index);
 			$(slider).slider( "option", "max", App.gdata.length - 1);
-			$('#range').text('The current data set starts in ' + App.gdata[0].year + ' and it ends in the year ' + App.gdata[App.gdata.length - 1].year);
+			$('#range').text('The current data set starts in ' + App.gdata[0].year + ' and it ends in the year ' + App.gdata[App.gdata.length - 1].year + " that is " + App.gdata.length + " elections");
 	}),
 	init: function() {
 
 	},
 
 	// makes a string of classes
-	make_selector: function(arr) {
-		return  "." + arr.join(", .");
+	make_selector: function(array_of_states) {
+		return  "." + array_of_states.join(", .");
 	},
 
-	// given the an index, it will find and color all of the given states
-	color_states: function(index, color, is_class) {
-		// is_class = typeof a !== 'undefined' ? a: true
+	// adds a color class to a string jq selector composed of state classes
+	color_states: function(index, color) {
 		$(App.make_selector(index)).addClass(color);
 	},
 
-	// removes all color classes from all the states
+	// removes all color classes from all the states.
+	// this list should be an array of color from the current election,
+	// as those colors change, they should get added to the array
 	reset_colors: function() {
 		$('#election li').removeClass('blue red yellow other');
 	},
 
 	// @index = index of the data var
 	// color all the states per election
-	color_all: function(index) {
-		for(var party in App.gdata[index].parties) {
-			App.color_states(App.gdata[index].parties[party], party);
+	color_all: function(party_index) {
+		for(var party in App.gdata[party_index].parties) {
+			App.color_states(App.gdata[party_index].parties[party].states, App.gdata[party_index].parties[party].color);
 		}
 	},
 
@@ -65,7 +66,7 @@ $('#next').on('click', function(){
 $('#prev').on('click', function(){
 	App.current_election_index--;
 	$(App.slider).slider("value", App.current_election_index);
-	refresh_all(App.current_election_index);
+	App.refresh_all(App.current_election_index);
 });
 
 $(App.slider).slider({
