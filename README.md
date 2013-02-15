@@ -1,10 +1,11 @@
 making an animation of all of the elections
-* plan on adding victor/loser
-* and a quick fact about the election
-* maybe some other data
-* party names
-* legend
-* routing to more quickly navigate to years
-* implement requirejs
-* DONE - add wikipedia page
 * eventually transfer to mongo/express
+* a quick fact about the election
+* legend
+* implement requirejs
+* routing to more quickly navigate to years
+* DONE - maybe some other data
+* DONE - party names
+* DONE - add wikipedia page
+* DONE - plan on adding victor/loser
+* DONE - add playback

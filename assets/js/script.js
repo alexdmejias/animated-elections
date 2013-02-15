@@ -4,6 +4,7 @@ App = {
 	slider: $('#slider'),
 	wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
 	timer: '',
+	timer_duration: 2000,
 	init: function() {
 		$.get('assets/data.json', function(data) {
 			App.gdata = data;
@@ -58,7 +59,7 @@ App = {
 			App.current_election_index++;
 			$(App.slider).slider("value", App.current_election_index);
 			App.refresh_all(App.current_election_index);
-		}, 1500)
+		}, App.timer_duration)
 	},
 
 	timer_stop: function() {
