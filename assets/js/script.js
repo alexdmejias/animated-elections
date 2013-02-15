@@ -3,14 +3,14 @@ App = {
 	current_election_index: 0,
 	slider: $('#slider'),
 	wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
-	get: $.get('assets/data.json', function(data) {
+	timer: '',
+	init: function() {
+		$.get('assets/data.json', function(data) {
 			App.gdata = data;
 			App.refresh_all(App.current_election_index);
 			$(slider).slider( "option", "max", App.gdata.length - 1);
 			$('#range').text('The current data set starts in ' + App.gdata[0].year + ' and it ends in the year ' + App.gdata[App.gdata.length - 1].year + " that is " + App.gdata.length + " elections");
-	}),
-	init: function() {
-
+		})
 	},
 
 	// makes a string of classes
@@ -48,6 +48,23 @@ App = {
 		$('#wiki').attr('href', App.wiki_base + App.gdata[current_election_index].year);
 	},
 
+
+	timer_start: function() {
+		App.timer = setInterval(function(){
+			if(App.current_election_index == App.gdata.length - 1) {
+				App.timer_stop();
+			}
+			console.log(App.current_election_index);
+			App.current_election_index++;
+			$(App.slider).slider("value", App.current_election_index);
+			App.refresh_all(App.current_election_index);
+		}, 1500)
+	},
+
+	timer_stop: function() {
+		clearInterval(App.timer);
+	},
+
 	// in charge of updating the whole page
 	refresh_all: function(value) {
 		App.reset_colors();
@@ -69,6 +86,14 @@ $('#prev').on('click', function(){
 	App.refresh_all(App.current_election_index);
 });
 
+$('#play').on('click', function(){
+		App.timer_start();
+});
+
+$('#stop').on('click', function(){
+	App.timer_stop();
+});
+
 $(App.slider).slider({
 	range: false,
 	min: 0,
@@ -79,3 +104,5 @@ $(App.slider).slider({
 		App.refresh_all(App.current_election_index);
 	}
 });
+
+App.init();

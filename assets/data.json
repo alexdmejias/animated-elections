@@ -5,7 +5,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Ulysses S. Grant",
 				"total_votes": 214,
 				"states": ["al", "ar", "ca", "ct", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "mo", "ne", "nv", "nh", "nc", "oh", "pa", "ri", "sc", "tn", "vt", "wv", "wi"]
@@ -30,7 +30,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Ulysses S. Grant",
 				"total_votes": 286,
 				"states": ["al", "ca", "ct", "de", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "ms", "ne", "nv", "nh", "nj", "ny", "nc", "oh", "or", "pa", "ri", "sc", "vt", "va", "wv", "wi"]
@@ -56,7 +56,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Rutherford B. Hayes",
 				"total_votes": 185,
 				"states": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "la", "wi", "il", "mi", "oh", "pa", "sc", "fl", "vt", "nh", "me", "ma", "ri"]
@@ -76,7 +76,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "James A. Garfield",
 				"total_votes": 214,
 				"states": ["or", "co", "ne", "ks", "ia", "mn", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ny", "ri"]
@@ -94,19 +94,19 @@
 		"year": 1884,
 		"parties": [
 			{
+				"name": "Democatric",
+				"color": "blue",
+				"winner": true,
+				"candidate": " Grover Cleveland",
+				"total_votes": 219,
+				"states": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "in", "ky", "tn", "wv", "va", "nc", "sc", "md", "de", "nj", "ny", "ct"]
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": " James G. Blaine",
 				"total_votes": 182,
 				"states": ["ca", "or", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "mi", "oh", "pa", "vt", "nh", "me", "ma", "ri"]
-			},
-			{
-				"name": "Democatric",
-				"color": "blue",
-				"position": "winner",
-				"candidate": " Grover Cleveland",
-				"total_votes": 219,
-				"states": ["tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "in", "ky", "tn", "wv", "va", "nc", "sc", "md", "de", "nj", "ny", "ct"]
 			}
 		]
 	},
@@ -116,7 +116,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Benjamin Harrison",
 				"total_votes": 233,
 				"states": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ri"]
@@ -134,19 +134,19 @@
 		"year": 1892,
 		"parties": [
 			{
+				"name": "Democatric",
+				"winner": true,
+				"color": "blue",
+				"candidate": "Grover Cleveland",
+				"total_votes": 277,
+				"states": ["ca", "tx", "mo", "ar", "la", "wi", "il", "in", "ky", "tn", "ms", "al", "ga", "fl", "sc", "nc", "wv", "va", "md", "de", "nj", "ny", "ct", "nd"]
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": "Benjamin Harrison",
 				"total_votes": 145,
 				"states": ["wa", "or", "mt", "wy", "sd", "ne", "mn", "ia", "oh", "pa", "vt", "nh", "me", "ma", "ri", "mi"]
-			},
-			{
-				"name": "Democatric",
-				"position": "winner",
-				"color": "blue",
-				"candidate": "Grover Cleveland",
-				"total_votes": 277,
-				"states": ["ca", "tx", "mo", "ar", "la", "wi", "il", "in", "ky", "tn", "ms", "al", "ga", "fl", "sc", "nc", "wv", "va", "md", "de", "nj", "ny", "ct", "nd"]
 			},
 			{	"name": "People's",
 				"color": "yellow",
@@ -162,7 +162,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": " William McKinley",
 				"total_votes": 271,
 				"states": ["ca", "or", "nd", "mn", "ia", "wi", "il", "mi", "in", "ky", "oh", "wv", "pa", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "ny"]
@@ -182,7 +182,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": " William McKinley",
 				"total_votes": 292,
 				"states": ["wa", "or", "ca", "ut", "wy", "nd", "sd", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "wv", "pa", "md", "de", "nj", "ny", "ct", "ma", "vt", "nh", "ma", "me"]
@@ -202,7 +202,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Theodore Roosevelt",
 				"total_votes": 336,
 				"states": ["wa", "or", "ca", "id", "nv", "mt", "wy", "ut", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wi", "il", "in", "mi", "oh", "wv", "pa", "ny", "nj", "de", "ct", "ma", "ri", "vt", "nh", "me"]
@@ -222,7 +222,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "William H. Taft",
 				"total_votes": 321,
 				"states": ["wa", "or", "ca", "id", "mt", "wy", "ut", "nd", "sd", "ks", "mn", "ia", "mo", "wi", "il", "mi", "in", "oh", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "de"]
@@ -240,19 +240,19 @@
 		"year": 1912,
 		"parties": [
 			{
+				"name": "Democrat",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Woodrow Wilson",
+				"total_votes": 435,
+				"states": ["az", "or", "nv", "id", "mt", "wy", "co", "nm", "nd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "wi", "il", "ms", "in", "ky", "tn", "ms", "oh", "al", "fl", "ga", "sc", "nc", "va", "wv", "ny", "md", "de", "nj", "ct", "ma", "ri", "nh", "me"]
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": "William H. Taft",
 				"total_votes": 8,
 				"states": ["ut", "vt"]
-			},
-			{
-				"name": "Democrat",
-				"color": "blue",
-				"position": "winner",
-				"candidate": "Woodrow Wilson",
-				"total_votes": 435,
-				"states": ["az", "or", "nv", "id", "mt", "wy", "co", "nm", "nd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "wi", "il", "ms", "in", "ky", "tn", "ms", "oh", "al", "fl", "ga", "sc", "nc", "va", "wv", "ny", "md", "de", "nj", "ct", "ma", "ri", "nh", "me"]
 			},
 			{
 				"name": "Progressive",
@@ -267,19 +267,19 @@
 		"year": 1916,
 		"parties": [
 			{
+				"name": "Democrat",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Woodrow Wilson",
+				"total_votes": 277,
+				"states": ["wa", "ca", "nv", "id", "mt", "wy", "ut", "az", "co", "nm", "nd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky", "tn", "oh", "md", "nh"]
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": "Charles E. Hughes",
 				"total_votes": 254,
 				"states": ["or", "sd", "mn", "ia", "wi", "il", "in", "mi", "wv", "pa", "ny", "vt", "me", "ma", "ct", "ri", "nj", "de"]
-			},
-			{
-				"name": "Democrat",
-				"color": "blue",
-				"position": "winner",
-				"candidate": "Woodrow Wilson",
-				"total_votes": 277,
-				"states": ["wa", "ca", "nv", "id", "mt", "wy", "ut", "az", "co", "nm", "nd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "va", "ky", "tn", "oh", "md", "nh"]
 			}
 		]
 	},
@@ -289,7 +289,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Warren G. Harding",
 				"total_votes": 404,
 				"states": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "ok", "mn", "ia", "mo", "wo", "il", "tn", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "wi"]
@@ -309,7 +309,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Calvin Coolidge",
 				"total_votes": 382,
 				"states": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wo", "il", "ky", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me"]
@@ -336,7 +336,7 @@
 			{
 				"name": "Republican",
 				"color": "red",
-				"position": "winner",
+				"winner": true,
 				"candidate": "Herbert C. Hoover",
 				"total_votes": 444,
 				"states": ["az", "ca", "co", "ct", "de", "fl", "id", "il", "in", "ia", "ks", "ky", "me", "md", "mi", "mn", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"]
@@ -354,19 +354,19 @@
 		"year": 1932,
 		"parties": [
 			{
+				"name": "Democrat",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Franklin D. Roosevelt",
+				"total_votes": 472,
+				"states": ["al", "az", "ar", "ca", "co", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": "Herbert C. Hoover",
 				"total_votes": 59,
 				"states": ["pa", "de", "vt", "ct", "nh", "me"]
-			},
-			{
-				"name": "Democrat",
-				"color": "blue",
-				"position": "winner",
-				"candidate": "Franklin D. Roosevelt",
-				"total_votes": 472,
-				"states": ["al", "az", "ar", "ca", "co", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
 			}
 		]
 	},
@@ -374,19 +374,19 @@
 		"year": 1936,
 		"parties": [
 			{
+				"name": "Democrat",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Franklin D. Roosevelt",
+				"total_votes": 523,
+				"states": ["al", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": "Alfred M. Landon",
 				"total_votes": 523,
 				"states": ["vt", "me"]
-			},
-			{
-				"name": "Democrat",
-				"color": "blue",
-				"position": "winner",
-				"candidate": "Franklin D. Roosevelt",
-				"total_votes": 523,
-				"states": ["al", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "id", "il", "in", "ia", "ks", "ky", "la", "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", "sd", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
 			}
 		]
 	}
