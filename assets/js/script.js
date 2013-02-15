@@ -1,10 +1,17 @@
 App = {
 	gdata: '',
 	current_election_index: 0,
-	slider: $('#slider'),
 	wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
-	timer: '',
-	timer_duration: 2000,
+	// caching
+	slider: $('#slider'),
+	election_selector: $('#election'),
+
+	// timer
+	timer_id: '',
+	timer_duration: 500,
+	timer_on: false,
+
+
 	init: function() {
 		$.get('assets/data.json', function(data) {
 			App.gdata = data;
@@ -21,14 +28,14 @@ App = {
 
 	// adds a color class to a string jq selector composed of state classes
 	color_states: function(index, color) {
-		$(App.make_selector(index)).addClass(color);
+		$(App.make_selector(index), App.election_selector).addClass(color);
 	},
 
 	// removes all color classes from all the states.
 	// this list should be an array of color from the current election,
 	// as those colors change, they should get added to the array
 	reset_colors: function() {
-		$('#election li').removeClass('blue red yellow other');
+		$('li', App.election_selector).removeClass('blue red yellow other');
 	},
 
 	// @index = index of the data var
@@ -51,19 +58,21 @@ App = {
 
 
 	timer_start: function() {
-		App.timer = setInterval(function(){
-			if(App.current_election_index == App.gdata.length - 1) {
+		App.timer_id = setInterval(function(){
+			if((App.current_election_index < App.gdata.length - 1) && (App.timer_on == true)) {
+				App.current_election_index++;
+				$(App.slider).slider("value", App.current_election_index);
+				App.refresh_all(App.current_election_index);
+			} else {
 				App.timer_stop();
+				App.timer_on = false;
 			}
-			console.log(App.current_election_index);
-			App.current_election_index++;
-			$(App.slider).slider("value", App.current_election_index);
-			App.refresh_all(App.current_election_index);
 		}, App.timer_duration)
 	},
 
 	timer_stop: function() {
-		clearInterval(App.timer);
+		clearInterval(App.timer_id);
+		App.timer_on = false;
 	},
 
 	// in charge of updating the whole page
@@ -88,10 +97,14 @@ $('#prev').on('click', function(){
 });
 
 $('#play').on('click', function(){
+	if (App.timer_on == false) {
 		App.timer_start();
+	}
+	App.timer_on = true;
 });
 
 $('#stop').on('click', function(){
+	App.timer_on = false;
 	App.timer_stop();
 });
 
