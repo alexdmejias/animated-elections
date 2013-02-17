@@ -5,9 +5,23 @@
   <title>Animted Elections</title>
   <link rel="stylesheet" href="assets/css/main.css?v=1.0">
   <link rel="stylesheet" href="assets/css/slider.css">
-
 </head>
 <body>
+
+	<script id="data_template" type="text/x-dot-template">
+		<h3>year: {{= it.year}}</h3>
+			{{~it.parties :value:index}}
+				{{? value.winner == true}}
+					<h4>the winner was {{=value.name}} from the {{=value.candiadte}} party with {{=value.total_votes}} votes</h4>
+					<h5>And the loser(s) were/was</h5>
+					{{?? value.name != "other" && value.name != "winner"}}
+						<h5>{{=value.candidate}} from the {{=value.name}} party with {{=value.total_votes}} votes</h5>
+					{{??}}
+				{{?}}
+			{{~}}
+	</script>
+
+
 	<h1><span id="year"></span> Presidential Election <a id="wiki" href="#" rel="_blank">(wiki page)</a></h1>
 	<p id="range"></p>
 	<h2 id="prev">prev</h2>
@@ -71,7 +85,7 @@
 	<div id="data">
 
 	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
 	<script src="assets/js/doT.min.js"></script>
 	<script src="assets/js/script.js"></script>

@@ -4,7 +4,7 @@ making an animation of all of the elections
 * legend
 * implement requirejs
 * routing to more quickly navigate to years
-* inclue template to display new data
+* DONE - inclue template to display new data
 * DONE - maybe some other data
 * DONE - party names
 * DONE - add wikipedia page

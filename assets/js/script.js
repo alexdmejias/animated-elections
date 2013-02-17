@@ -8,9 +8,12 @@ App = {
 
 	// timer
 	timer_id: '',
-	timer_duration: 500,
+	timer_duration: 2000,
 	timer_on: false,
 
+	// template
+	compiled_template: '',
+	t: $('#data_template').html(),
 
 	init: function() {
 		$.get('assets/data.json', function(data) {
@@ -56,12 +59,19 @@ App = {
 		$('#wiki').attr('href', App.wiki_base + App.gdata[current_election_index].year);
 	},
 
+	doT_template: function(){
+		App.compiled_template = doT.template(App.t);
+	},
+
+	render_template: function(value) {
+		$('#data').html(App.compiled_template(App.gdata[value]));
+	},
 
 	timer_start: function() {
 		App.timer_id = setInterval(function(){
 			if((App.current_election_index < App.gdata.length - 1) && (App.timer_on == true)) {
 				App.current_election_index++;
-				$(App.slider).slider("value", App.current_election_index);
+				App.slider.slider("value", App.current_election_index);
 				App.refresh_all(App.current_election_index);
 			} else {
 				App.timer_stop();
@@ -81,18 +91,20 @@ App = {
 		App.color_all(value);
 		App.change_year(value);
 		App.wiki_url(value);
+		App.doT_template();
+		App.render_template(value);
 	},
 };
 
 $('#next').on('click', function(){
 	App.current_election_index++;
-	$(App.slider).slider("value", App.current_election_index);
+	App.slider.slider("value", App.current_election_index);
 	App.refresh_all(App.current_election_index);
 });
 
 $('#prev').on('click', function(){
 	App.current_election_index--;
-	$(App.slider).slider("value", App.current_election_index);
+	App.slider.slider("value", App.current_election_index);
 	App.refresh_all(App.current_election_index);
 });
 
@@ -101,14 +113,16 @@ $('#play').on('click', function(){
 		App.timer_start();
 	}
 	App.timer_on = true;
+	$(this).append(" (playing)");
 });
 
 $('#stop').on('click', function(){
 	App.timer_on = false;
 	App.timer_stop();
+	$('#play').text('play');
 });
 
-$(App.slider).slider({
+App.slider.slider({
 	range: false,
 	min: 0,
 	step: 1,
