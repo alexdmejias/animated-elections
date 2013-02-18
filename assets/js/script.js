@@ -7,13 +7,17 @@ App = {
 	election_selector: $('#election'),
 
 	// timer
-	timer_id: '',
-	timer_duration: 2000,
-	timer_on: false,
+	timer: {
+		id: '',
+		duration: 1750,
+		on: false
+	},
 
 	// template
-	compiled_template: '',
-	t: $('#data_template').html(),
+	template: {
+		compiled: '',
+		layout: $('#data_template').html()
+	},
 
 	init: function() {
 		$.get('assets/data.json', function(data) {
@@ -60,29 +64,29 @@ App = {
 	},
 
 	doT_template: function(){
-		App.compiled_template = doT.template(App.t);
+		App.template.compiled = doT.template(App.template.layout);
 	},
 
 	render_template: function(value) {
-		$('#data').html(App.compiled_template(App.gdata[value]));
+		$('#data').html(App.template.compiled(App.gdata[value]));
 	},
 
 	timer_start: function() {
-		App.timer_id = setInterval(function(){
-			if((App.current_election_index < App.gdata.length - 1) && (App.timer_on == true)) {
+		App.timer.id = setInterval(function(){
+			if((App.current_election_index < App.gdata.length - 1) && (App.timer.on == true)) {
 				App.current_election_index++;
 				App.slider.slider("value", App.current_election_index);
 				App.refresh_all(App.current_election_index);
 			} else {
 				App.timer_stop();
-				App.timer_on = false;
+				App.timer.on = false;
 			}
-		}, App.timer_duration)
+		}, App.timer.duration)
 	},
 
 	timer_stop: function() {
-		clearInterval(App.timer_id);
-		App.timer_on = false;
+		clearInterval(App.timer.id);
+		App.timer.on = false;
 	},
 
 	// in charge of updating the whole page
@@ -109,15 +113,15 @@ $('#prev').on('click', function(){
 });
 
 $('#play').on('click', function(){
-	if (App.timer_on == false) {
+	if (App.timer.on == false) {
 		App.timer_start();
 	}
-	App.timer_on = true;
+	App.timer.on = true;
 	$(this).append(" (playing)");
 });
 
 $('#stop').on('click', function(){
-	App.timer_on = false;
+	App.timer.on = false;
 	App.timer_stop();
 	$('#play').text('play');
 });
