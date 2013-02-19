@@ -1,5 +1,5 @@
 body{
-	width: $width;
+	// width: $width;
 	margin: 0 auto;
 	font-family: "helvetica neue", arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -41,10 +41,14 @@ h1{
 	ul {
 		margin: 0 auto;
 		width: 52%;
+		color: #fff;
 	}
 }
 
-li {color: #fff; }
+
+li {
+	color: #efefef;
+}
 .yellow {color: $yellow; }
 .other {color: $other; }
 
