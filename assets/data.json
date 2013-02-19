@@ -208,7 +208,7 @@
 				"states": ["wa", "or", "ca", "id", "nv", "mt", "wy", "ut", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wi", "il", "in", "mi", "oh", "wv", "pa", "ny", "nj", "de", "ct", "ma", "ri", "vt", "nh", "me"]
 			},
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "Alton B. Parker",
 				"total_votes": 140,
@@ -228,7 +228,7 @@
 				"states": ["wa", "or", "ca", "id", "mt", "wy", "ut", "nd", "sd", "ks", "mn", "ia", "mo", "wi", "il", "mi", "in", "oh", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "de"]
 			},
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "William J. Bryan",
 				"total_votes": 162,
@@ -240,7 +240,7 @@
 		"year": 1912,
 		"parties": [
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"winner": true,
 				"candidate": "Woodrow Wilson",
@@ -267,7 +267,7 @@
 		"year": 1916,
 		"parties": [
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"winner": true,
 				"candidate": "Woodrow Wilson",
@@ -295,7 +295,7 @@
 				"states": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "ok", "mn", "ia", "mo", "wo", "il", "tn", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me", "wi"]
 			},
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "James M. Cox",
 				"total_votes": 127,
@@ -315,7 +315,7 @@
 				"states": ["wa", "or", "ca", "nv", "id", "mt", "wy", "ut", "az", "nm", "co", "nd", "sd", "ne", "ks", "mn", "ia", "mo", "wo", "il", "ky", "in", "mi", "oh", "wv", "pa", "ny", "md", "de", "nj", "ct", "ma", "ri", "vt", "nh", "me"]
 			},
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "John W. Davis",
 				"total_votes": 136,
@@ -342,7 +342,7 @@
 				"states": ["az", "ca", "co", "ct", "de", "fl", "id", "il", "in", "ia", "ks", "ky", "me", "md", "mi", "mn", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"]
 			},
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "Alfred E. Smith",
 				"total_votes": 87,
@@ -354,7 +354,7 @@
 		"year": 1932,
 		"parties": [
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"winner": true,
 				"candidate": "Franklin D. Roosevelt",
@@ -374,7 +374,7 @@
 		"year": 1936,
 		"parties": [
 			{
-				"name": "Democrat",
+				"name": "Democratic",
 				"color": "blue",
 				"winner": true,
 				"candidate": "Franklin D. Roosevelt",
@@ -387,6 +387,158 @@
 				"candidate": "Alfred M. Landon",
 				"total_votes": 523,
 				"states": ["vt", "me"]
+			}
+		]
+	},
+	{
+		"year": 1940,
+		"parties": [
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Franklin D. Roosevelt",
+				"total_votes": 449,
+				"states": ["al", "az", "ar", "ca", "ct", "de", "fl", "ga", "id", "il", "ky", "la", "md", "ma", "mn", "ms", "mo", "mt", "nv", "nh", "nj", "nm", "ny", "nc", "oh", "ok", "or", "pa", "ri", "sc", "tn", "tx", "ut", "va", "wa", "wv", "wi", "wy"]
+			},
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Wendell L. Willkie",
+				"total_votes": 82,
+				"states": ["vt", "me", "co", "nd", "sd", "ne", "ks", "ia", "mi", "in"]
+			}
+		]
+	},
+	{
+		"year": 1944,
+		"parties": [
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Franklin D. Roosevelt",
+				"total_votes": 432,
+				"states": ["mi", "al", "az", "ar", "ca", "ct", "de", "fl", "ga", "id", "il", "ky", "la", "md", "ma", "mn", "ms", "mo", "mt", "nv", "nh", "nj", "nm", "ny", "nc", "ok", "or", "pa", "ri", "sc", "tn", "tx", "ut", "va", "wa", "wv"]
+			},
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Thomas E. Dewey",
+				"total_votes": 99,
+				"states": ["wy", "co", "nd", "sd", "ne", "ks", "ia", "wi", "in", "oh", "vt", "me"]
+			}
+		]
+	},
+	{
+		"year": 1948,
+		"parties": [
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Harry S. Truman",
+				"total_votes": 303,
+				"states": ["wa", "ca", "nv", "id", "mt", "wy", "ut", "az", "co", "nm", "ok", "tx", "mn", "ia", "mo", "ar", "wi", "il", "oh", "ky", "tn", "wv", "va", "nc", "ga", "fl", "ma"]
+			},
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Thomas E. Dewey",
+				"total_votes": 189,
+				"states": ["or", "nd", "sd", "ne", "ks", "mi", "in", "pa", "ny", "vt", "nh", "me", "ct", "md", "de", "nj"]
+			},
+			{
+				"name": "States' Rights Democratic",
+				"color": "yellow",
+				"candidate": "J. Strom Thurmond",
+				"total_votes": 39,
+				"states": ["la", "ms", "al", "sc"]
+			}
+		]
+	},
+ 	{
+		"year": 1952,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Dwight D. Eisenhower",
+				"total_votes": 442,
+				"winner": true,
+				"states": ["wa", "or", "ca", "id", "nv", "mt", "wy", "ut", "az", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "mn", "ia", "mo", "wi", "il", "tn", "mi", "in", "oh", "fl", "va", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "de", "md"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Adlai Stevenson",
+				"total_votes": 89,
+				"states": ["ar", "la", "ms", "al", "ga", "sc", "nc", "ky", "wv"]
+			}
+		]
+	},
+ 	{
+		"year": 1956,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Dwight D. Eisenhower",
+				"total_votes": 457,
+				"winner": true,
+				"states": ["la", "ky", "wv", "wa", "or", "ca", "id", "nv", "mt", "wy", "ut", "az", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "mn", "ia", "wi", "il", "tn", "mi", "in", "oh", "fl", "va", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "de", "md"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Adlai Stevenson",
+				"total_votes": 73,
+				"states": ["ar", "ms", "al", "ga", "sc", "nc", "ky", "wv", "mo"]
+			}
+		]
+	},
+ 	{
+		"year": 1960,
+		"parties": [
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"winner": true,
+				"candidate": "John F. Kennedy",
+				"total_votes": 303,
+				"states": ["nv", "nm", "tx", "mn", "mo", "ar", "la", "il", "ms", "mi", "ny", "ma", "ct", "ri", "nj", "de", "md", "pa", "wv", "nc", "sc", "ga", "hi"]
+			},			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Richard M. Nixon",
+				"total_votes": 219,
+				"states": ["wa", "or", "ca", "ak", "id", "ut", "az", "mt", "wy", "co", "nd", "sd", "ne", "ks", "ok", "ia", "wi", "in", "oh", "ky", "tn", "va", "fl", "vt", "nh", "me"]
+			},
+			{
+				"name": "Democratic",
+				"color": "purple",
+				"candidate": "Harry F. Byrd",
+				"total_votes": 15,
+				"states": ["al"]
+			}
+		]
+	},
+ 	{
+		"year": 1964,
+		"parties": [
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"winner": true,
+				"candidate": "Lyndon B. Johnson",
+				"total_votes": 486,
+				"states": ["ak", "ar", "ca", "co", "ct", "de", "fl", "hi", "id", "il", "in", "ia", "ks", "ky", "me", "md", "ma", "mi", "mn", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"]
+			},			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Barry M. Goldwater",
+				"total_votes": 52,
+				"states": ["az", "la", "ms", "al", "ga", "sc"]
 			}
 		]
 	}

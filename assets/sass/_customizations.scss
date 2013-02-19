@@ -24,15 +24,15 @@ h1{
 
 #slider {
 	margin-top: 20px;
-	background: #ccc;
-	border: 1px solid #777;
+	background: $light_blue;
+	border: 1px solid $blue;
 	border-radius: 6px;
 	a{
-		background: #999;
-		border: 1px solid #888;
+		background: $blue;
+		border: 1px solid $dark_blue;
 		border-radius: 6px;
 		&:hover {
-			background: #666;
+			background: $dark_blue;
 		}
 	}
 }
@@ -47,7 +47,7 @@ h1{
 
 
 li {
-	color: #efefef;
+	color: $default;
 }
 .yellow {color: $yellow; }
 .other {color: $other; }
@@ -55,6 +55,8 @@ li {
 .blue {color: $blue;}
 .dark_blue {color: $dark_blue;}
 .dark_blue_bg {background: $dark_blue;}
+
+.purple {color: $purple}
 
 .red {color: $red;}
 .dark_red {color: $dark_red;}

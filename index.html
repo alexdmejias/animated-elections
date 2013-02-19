@@ -11,8 +11,8 @@
 	<script id="data_template" type="text/x-dot-template">
 		{{~it.parties :value:index}}
 			{{? value.winner == true}}
-				<h4>the winner was {{=value.name}} from the {{=value.candiadte}} party with {{=value.total_votes}} votes</h4>
-				<h5>And the loser(s) were/was</h5>
+				<h4>The winner was {{=value.candidate}} from the {{=value.name}} party with {{=value.total_votes}} votes</h4>
+				<h5>And the loser(s)</h5>
 				{{?? value.name != "other" && value.name != "winner"}}
 					<h5>{{=value.candidate}} from the {{=value.name}} party with {{=value.total_votes}} votes</h5>
 				{{??}}
