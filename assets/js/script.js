@@ -6,11 +6,13 @@ App = {
 	// caching
 	$slider: $('#slider'),
 	$election: $('#election'),
+	$play: $('#play'),
 
 	// timer
 	timer: {
 		id: '',
-		duration: 1750,
+		duration: 50,
+		// duration: 1750,
 		on: false
 	},
 
@@ -73,20 +75,20 @@ App = {
 	},
 
 	timer_start: function() {
-		App.timer.id = setInterval(function(){
-			if((App.current_election_index < App.gdata.length - 1) && (App.timer.on == true)) {
+		if ((App.current_election_index < App.gdata.length - 1) && (App.timer.on == true)) {
+			App.timer.id = setTimeout(function() {
 				App.current_election_index++;
 				App.$slider.slider("value", App.current_election_index);
-				App.refresh_all(App.current_election_index);
-			} else {
-				App.timer_stop();
-				App.timer.on = false;
-			}
-		}, App.timer.duration)
+				App.timer_start();
+			}, App.timer.duration);
+		} else {
+			App.timer.on == false;
+			App.$play.removeClass('dark_blue_bg');
+		}
 	},
 
 	timer_stop: function() {
-		clearInterval(App.timer.id);
+		clearTimeout(App.timer.id);
 		App.timer.on = false;
 	},
 
@@ -113,18 +115,16 @@ $('#prev').on('click', function(){
 	App.refresh_all(App.current_election_index);
 });
 
-$('#play').on('click', function(){
-	if (App.timer.on == false) {
-		App.timer_start();
-	}
+App.$play.on('click', function(){
 	App.timer.on = true;
-	$(this).addClass('dark_blue_bg');
+	App.timer_start();
+	App.$play.addClass('dark_blue_bg');
 });
 
 $('#stop').on('click', function(){
 	App.timer.on = false;
 	App.timer_stop();
-	$('#play').removeClass('dark_blue_bg');
+	App.$play.removeClass('dark_blue_bg');
 });
 
 $('#restart').on('click', function() {
