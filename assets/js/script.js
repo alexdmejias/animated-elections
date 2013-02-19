@@ -2,9 +2,10 @@ App = {
 	gdata: '',
 	current_election_index: 0,
 	wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
+
 	// caching
-	slider: $('#slider'),
-	election_selector: $('#election'),
+	$slider: $('#slider'),
+	$election: $('#election'),
 
 	// timer
 	timer: {
@@ -23,7 +24,7 @@ App = {
 		$.get('assets/data.json', function(data) {
 			App.gdata = data;
 			App.refresh_all(App.current_election_index);
-			$(slider).slider( "option", "max", App.gdata.length - 1);
+			App.$slider.slider( "option", "max", App.gdata.length - 1);
 			$('#range').text('The current data set starts in ' + App.gdata[0].year + ' and it ends in the year ' + App.gdata[App.gdata.length - 1].year + " that is " + App.gdata.length + " elections");
 		})
 	},
@@ -35,14 +36,14 @@ App = {
 
 	// adds a color class to a string jq selector composed of state classes
 	color_states: function(index, color) {
-		$(App.make_selector(index), App.election_selector).addClass(color);
+		$(App.make_selector(index), App.$election).addClass(color);
 	},
 
 	// removes all color classes from all the states.
 	// this list should be an array of color from the current election,
 	// as those colors change, they should get added to the array
 	reset_colors: function() {
-		$('li', App.election_selector).removeClass('blue red yellow other');
+		$('li', App.$election).removeClass('blue red yellow other');
 	},
 
 	// @index = index of the data var
@@ -75,7 +76,7 @@ App = {
 		App.timer.id = setInterval(function(){
 			if((App.current_election_index < App.gdata.length - 1) && (App.timer.on == true)) {
 				App.current_election_index++;
-				App.slider.slider("value", App.current_election_index);
+				App.$slider.slider("value", App.current_election_index);
 				App.refresh_all(App.current_election_index);
 			} else {
 				App.timer_stop();
@@ -102,13 +103,13 @@ App = {
 
 $('#next').on('click', function(){
 	App.current_election_index++;
-	App.slider.slider("value", App.current_election_index);
+	App.$slider.slider("value", App.current_election_index);
 	App.refresh_all(App.current_election_index);
 });
 
 $('#prev').on('click', function(){
 	App.current_election_index--;
-	App.slider.slider("value", App.current_election_index);
+	App.$slider.slider("value", App.current_election_index);
 	App.refresh_all(App.current_election_index);
 });
 
@@ -126,7 +127,7 @@ $('#stop').on('click', function(){
 	$('#play').text('play');
 });
 
-App.slider.slider({
+App.$slider.slider({
 	range: false,
 	min: 0,
 	step: 1,
