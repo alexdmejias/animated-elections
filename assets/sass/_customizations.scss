@@ -1,37 +1,20 @@
 body{
 	width: $width;
 	margin: 0 auto;
-	font-family: "helvetica neue",arial,sans-serif;
+	font-family: "helvetica neue", arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	padding: 0 0 40px;
-
+	background: url('../images/grey.png') repeat repeat;
 }
 
 h1{
-	font-size: 24px;
+	// font-size: 24px;
 	font-weight: bold;
 	margin: 24px 0 6px;
 	color: $other;
-	color: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 3px;
-	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-	background: $red;
 	padding: 4px 8px;
-	a{
+	a {
 		color: $lightGrey;
-	}
-}
-
-h2 {
-	display: inline-block;
-	padding: 7px 15px;
-	background: #ccc;
-	border-radius: 8px;
-	border: 1px solid #777;
-	cursor: pointer;
-	&:hover {
-		background: #666;
 	}
 }
 
@@ -54,8 +37,21 @@ h2 {
 	}
 }
 
+.playback {
+	ul {
+		margin: 0 auto;
+		width: 52%;
+	}
+}
+
 li {color: #fff; }
-.blue {color: $blue; }
-.red {color: $red; }
 .yellow {color: $yellow; }
 .other {color: $other; }
+
+.blue {color: $blue;}
+.dark_blue {color: $dark_blue;}
+.dark_blue_bg {background: $dark_blue;}
+
+.red {color: $red;}
+.dark_red {color: $dark_red;}
+.dark_red_bg {background: $dark_red;}

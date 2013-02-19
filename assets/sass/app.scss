@@ -1,7 +1,6 @@
 // Your custom settings file to override Foundation defaults
 @import "_vars.scss";
 
-
 @import "settings";
 
 
@@ -24,8 +23,8 @@
 
 // Must include next two for semantic grid to work
 
-@import "foundation/mixins/respond-to";
-@import "foundation/mixins/semantic-grid";
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
 
 @import "modular-scale";
 @import "foundation/common/globals";

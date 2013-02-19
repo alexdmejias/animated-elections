@@ -118,13 +118,19 @@ $('#play').on('click', function(){
 		App.timer_start();
 	}
 	App.timer.on = true;
-	$(this).append(" (playing)");
+	$(this).addClass('dark_blue_bg');
 });
 
 $('#stop').on('click', function(){
 	App.timer.on = false;
 	App.timer_stop();
-	$('#play').text('play');
+	$('#play').removeClass('dark_blue_bg');
+});
+
+$('#restart').on('click', function() {
+	App.timer.on = false;
+	App.current_election_index = 0;
+	App.$slider.slider("value", App.current_election_index);
 });
 
 App.$slider.slider({
