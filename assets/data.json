@@ -533,12 +533,120 @@
 				"candidate": "Lyndon B. Johnson",
 				"total_votes": 486,
 				"states": ["ak", "ar", "ca", "co", "ct", "de", "fl", "hi", "id", "il", "in", "ia", "ks", "ky", "me", "md", "ma", "mi", "mn", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"]
-			},			{
+			},
+			{
 				"name": "Republican",
 				"color": "red",
 				"candidate": "Barry M. Goldwater",
 				"total_votes": 52,
 				"states": ["az", "la", "ms", "al", "ga", "sc"]
+			}
+		]
+	},
+ 	{
+		"year": 1968,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Richard M. Nixon",
+				"total_votes": 301,
+				"states": ["or", "ca", "ak", "id", "nv", "mt", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "ia", "mo", "wi", "il", "in", "oh", "ky", "tn", "fl", "sc", "nc", "va", "nj", "vt", "nh"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Hubert H. Humphrey",
+				"total_votes": 191,
+				"states": ["wa", "tx", "mn", "mi", "wv", "pa", "ny", "ct", "ma", "me", "md", "hi"]
+			},
+			{
+				"name": "American Independent",
+				"color": "yellow",
+				"candidate": "George C. Wallace",
+				"total_votes": 46,
+				"states": ["ar", "la", "ms", "al", "ga"]
+			}
+		]
+	},
+ 	{
+		"year": 1972,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Richard M. Nixon",
+				"total_votes": 520,
+				"states": ["or", "ca", "ak", "id", "nv", "mt", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "ia", "mo", "wi", "il", "in", "oh", "ky", "tn", "fl", "sc", "nc", "va", "nj", "vt", "nh", "wa", "tx", "mn", "mi", "wv", "pa", "ny", "ct", "me", "md", "hi", "ar", "la", "ms", "al", "ga"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "George McGovern",
+				"total_votes": 17,
+				"states": ["ma"]
+			}
+		]
+	},
+ 	{
+		"year": 1976,
+		"parties": [
+			{
+				"name": "Democratic",
+				"winner": true,
+				"color": "blue",
+				"candidate": "Jimmy Carter",
+				"total_votes": 297,
+				"states": ["hi", "tx", "ar", "la", "ms", "al", "ga", "fl", "sc", "nc", "tn", "mn", "wi", "mo", "ky", "oh", "wv", "pa", "md", "de", "ny", "ma", "ri"]
+			},
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Gerald R. Ford",
+				"total_votes": 240,
+				"states": ["wa", "or", "ca", "ak", "nv", "id", "mt", "wy", "co", "nm", "az", "ut", "nd", "sd", "ne", "ks", "ok", "ia", "il", "mi", "in", "va", "me", "vt", "nh", "ct", "nj"]
+			}
+		]
+	},
+ 	{
+		"year": 1980,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Ronald Reagan",
+				"total_votes": 520,
+				"states": ["or", "ca", "ak", "id", "nv", "mt", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "ia", "mo", "wi", "il", "in", "oh", "ky", "tn", "fl", "sc", "nc", "va", "nj", "vt", "nh", "wa", "tx", "mi", "pa", "ny", "ct", "me", "ar", "la", "ms", "al", "ma"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Jimmy Carter",
+				"total_votes": 17,
+				"states": ["mn", "hi", "ga", "wv", "md", "ri"]
+			}
+		]
+	},
+ 	{
+		"year": 1984,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Ronald Reagan",
+				"total_votes": 525,
+				"states": ["or", "ca", "ak", "id", "nv", "mt", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "ia", "mo", "wi", "il", "in", "oh", "ky", "tn", "fl", "sc", "nc", "va", "nj", "vt", "nh", "wa", "tx", "ma", "mi", "wv", "pa", "ny", "ct", "me", "md", "hi", "ar", "la", "ms", "al", "ga"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Walter F. Mondale",
+				"total_votes": 13,
+				"states": ["mn"]
 			}
 		]
 	}
