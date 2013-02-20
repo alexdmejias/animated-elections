@@ -4,15 +4,14 @@ App = {
 	wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
 
 	// caching
-	$slider: $('#slider'),
+	$slider: $('#slide'),
 	$election: $('#election'),
 	$play: $('#play'),
 
 	// timer
 	timer: {
 		id: '',
-		duration: 50,
-		// duration: 1750,
+		duration: 1750,
 		on: false
 	},
 
@@ -26,8 +25,18 @@ App = {
 		$.get('assets/data.json', function(data) {
 			App.gdata = data;
 			App.refresh_all(App.current_election_index);
-			App.$slider.slider( "option", "max", App.gdata.length - 1);
+			App.$slider.noUiSlider('init', {
+				handles: 1,
+			    scale: [0, App.gdata.length -1],
+			    start: 0,
+			    step: 1,
+				end: function() {
+					App.current_election_index = $(this).noUiSlider('value')[1];
+					App.refresh_all(App.current_election_index);
+				}
+			});
 			$('#range').text('The current data set starts in ' + App.gdata[0].year + ' and it ends in the year ' + App.gdata[App.gdata.length - 1].year + " that is " + App.gdata.length + " elections");
+
 		})
 	},
 
@@ -78,7 +87,10 @@ App = {
 		if ((App.current_election_index < App.gdata.length - 1) && (App.timer.on == true)) {
 			App.timer.id = setTimeout(function() {
 				App.current_election_index++;
-				App.$slider.slider("value", App.current_election_index);
+				App.$slider.noUiSlider("move", {
+					to: App.current_election_index
+				});
+
 				App.timer_start();
 			}, App.timer.duration);
 		} else {
@@ -105,13 +117,17 @@ App = {
 
 $('#next').on('click', function(){
 	App.current_election_index++;
-	App.$slider.slider("value", App.current_election_index);
+	App.$slider.noUiSlider("move", {
+		to: App.current_election_index
+	});
 	App.refresh_all(App.current_election_index);
 });
 
 $('#prev').on('click', function(){
 	App.current_election_index--;
-	App.$slider.slider("value", App.current_election_index);
+	App.$slider.noUiSlider("move", {
+		to: App.current_election_index
+	});
 	App.refresh_all(App.current_election_index);
 });
 
@@ -130,18 +146,11 @@ $('#stop').on('click', function(){
 $('#restart').on('click', function() {
 	App.timer.on = false;
 	App.current_election_index = 0;
-	App.$slider.slider("value", App.current_election_index);
+	App.$slider.noUiSlider("move", {
+		to: 0
+	});
 });
 
-App.$slider.slider({
-	range: false,
-	min: 0,
-	step: 1,
-	animate: "fast",
-	change: function(event, ui) {
-		App.current_election_index = ui.value;
-		App.refresh_all(App.current_election_index);
-	}
-});
+
 
 App.init();

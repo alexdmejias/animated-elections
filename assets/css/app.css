@@ -1379,3 +1379,58 @@ li {
 .dark_red_bg {
   background: #d10a00;
 }
+
+/* line 1, ../sass/_nouislider.scss */
+.noUiSlider {
+  width: 100%;
+  border: 1px solid #cccccc;
+  height: 8px;
+  background: #efefef;
+  border-radius: 8px;
+  -webkit-touch-callout: none;
+  margin: 15px auto 0;
+}
+/* line 10, ../sass/_nouislider.scss */
+.noUiSlider .noUi-midBar {
+  height: 100%;
+  z-index: 0;
+  background: #2d699e;
+  -webkit-touch-callout: none;
+}
+/* line 17, ../sass/_nouislider.scss */
+.noUiSlider .noUi-handle > div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -5px;
+  left: -8px;
+  z-index: 5;
+  border: 1px solid #074a85;
+  background: #2d699e;
+  border-radius: 8px;
+}
+/* line 30, ../sass/_nouislider.scss */
+.noUiSlider .noUi-handle > div:hover,
+.noUiSlider .noUi-handle > div.noUi-activeHandle {
+  background: #074a85;
+  border-color: #074a85;
+}
+/* line 35, ../sass/_nouislider.scss */
+.noUiSlider .disabled > .noUi-midBar {
+  background: #999;
+}
+/* line 39, ../sass/_nouislider.scss */
+.noUiSlider .disabled .noUi-handle > div {
+  border-color: #CCC;
+  background: #CCC;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.2), -moz-touch-enabled, (max-device-width: 1024px) {
+  /* line 45, ../sass/_nouislider.scss */
+  .noUi-handle > div {
+    height: 32px;
+    width: 32px;
+    top: -13px;
+    left: -16px;
+  }
+}
