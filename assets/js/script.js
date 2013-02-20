@@ -12,7 +12,8 @@ App = {
 	timer: {
 		id: '',
 		duration: 1750,
-		on: false
+		on: false,
+		active_btn_class: 'dark_blue_bg'
 	},
 
 	// template
@@ -85,17 +86,16 @@ App = {
 
 	timer_start: function() {
 		if ((App.current_election_index < App.gdata.length - 1) && (App.timer.on == true)) {
+			App.current_election_index++;
 			App.timer.id = setTimeout(function() {
-				App.current_election_index++;
-				App.$slider.noUiSlider("move", {
-					to: App.current_election_index
-				});
-
-				App.timer_start();
+			App.$slider.noUiSlider("move", {
+				to: App.current_election_index
+			});
+			App.timer_start();
 			}, App.timer.duration);
 		} else {
 			App.timer.on == false;
-			App.$play.removeClass('dark_blue_bg');
+			App.$play.removeClass(App.timer.active_btn_class);
 		}
 	},
 
@@ -120,7 +120,6 @@ $('#next').on('click', function(){
 	App.$slider.noUiSlider("move", {
 		to: App.current_election_index
 	});
-	App.refresh_all(App.current_election_index);
 });
 
 $('#prev').on('click', function(){
@@ -128,19 +127,21 @@ $('#prev').on('click', function(){
 	App.$slider.noUiSlider("move", {
 		to: App.current_election_index
 	});
-	App.refresh_all(App.current_election_index);
 });
 
 App.$play.on('click', function(){
-	App.timer.on = true;
-	App.timer_start();
-	App.$play.addClass('dark_blue_bg');
+	// so it doesnt add multiple timers
+	if (App.timer.on == false) {
+		App.timer.on = true;
+		App.timer_start();
+	}
+	App.$play.addClass(App.timer.active_btn_class);
 });
 
 $('#stop').on('click', function(){
 	App.timer.on = false;
 	App.timer_stop();
-	App.$play.removeClass('dark_blue_bg');
+	App.$play.removeClass(App.timer.active_btn_class);
 });
 
 $('#restart').on('click', function() {
