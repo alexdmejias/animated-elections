@@ -1,7 +1,7 @@
 // main App(v) renders most of the page and calls a collection.
 // the collection gets the data and returns one model, the one currently being looked at
 // the model gives the data back to the main view
-
+// TODO: BREAK DOWN INTO SMALLER FILES WIT REQUIREJS
 
 var Election = Backbone.Model.extend({});
 
