@@ -6,7 +6,6 @@
 var Election = Backbone.Model.extend({});
 
 var Elections = Backbone.Collection.extend({
-    ind: 0,
     model: Election,
     url: '/assets/data.json',
 
@@ -22,14 +21,28 @@ var Elections = Backbone.Collection.extend({
 
 
 var ElectionView = Backbone.View.extend({
+    wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
+
     initialize: function() {
         this.render();
     },
 
     render: function() {
-        $('#year').html(this.model.get('year'));
+        this.update_wiki_link();
+        this.update_heading();
+
         return this;
-    }
+    },
+
+    update_wiki_link: function() {
+        $('#wiki').attr('href', this.wiki_base + this.model.get('year'));
+    },
+
+    update_heading: function() {
+        $('#year').html(this.model.get('year'));
+    },
+
+
 });
 
 
@@ -52,29 +65,41 @@ var App = Backbone.View.extend({
     },
 
     events: {
-        'click #next': 'inc_election_index'
+        'click #next': 'next',
+        'click #prev': 'prev'
     },
 
-    inc_election_index: function() {
-        this.current_election_index++;
-        this.render();
+    change_election_index: function(prev) {
+        return typeof prev === 'undefined' ? this.current_election_index++: this.current_election_index--;
+    },
+
+    next: function() {
+        // add an indicator to show they cant go in this direction anymroe
+        if (this.current_election_index + 1 != elections.length) {
+            this.change_election_index();
+            this.render();
+        }
+    },
+
+    prev: function() {
+        // add an indicator to show they cant go in this direction anymroe
+        if (this.current_election_index != 0 ) {
+            this.change_election_index(prev);
+            this.render();
+        }
     }
-})
+
+});
 
 var router = Backbone.Router.extend({
     routes: {
-        '': 'root',
-        'elections/:id': 'year'
+        '': 'root'
     },
 
     root: function(){
         new App();
-    },
-
-    year: function(year) {
-        var collection = new Elections();
-        return collection.at(year);
     }
 });
+
 var r = new router();
 Backbone.history.start();
