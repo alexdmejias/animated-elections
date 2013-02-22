@@ -6,18 +6,15 @@
 var Election = Backbone.Model.extend({});
 
 var Elections = Backbone.Collection.extend({
-	ind: 0,
-	model: Election,
-	url: '/assets/data.json',
+    ind: 0,
+    model: Election,
+    url: '/assets/data.json',
 
-	initialize: function() {
-		// console.log(this.model.get('year'));
-		// return this;
-	},
+    initialize: function() {
+    },
 
-	render: function() {
-		// return this;
-	}
+    render: function() {
+    }
 
 });
 
@@ -25,49 +22,59 @@ var Elections = Backbone.Collection.extend({
 
 
 var ElectionView = Backbone.View.extend({
-	initialize: function() {
-		// this.model.on('change', this.render, this)
-		this.render();
-	},
+    initialize: function() {
+        this.render();
+    },
 
-	render: function() {
-		console.log(this.model.get('year'));
-		return this;
-	}
+    render: function() {
+        $('#year').html(this.model.get('year'));
+        return this;
+    }
 });
 
 
 
 
 
-
 var App = Backbone.View.extend({
-	current_election_index: 0,
-	el: 'body',
-	initialize: function() {
-		var elections = new Elections();
-		elections.fetch({
-			success: function () {
-				var view = new ElectionView({model: elections.at(0)})
-			}
-		});
-	}
+    current_election_index: 0,
+    el: 'body',
+    initialize: function() {
+        elections = new Elections();
+        _.bindAll(this, 'render');
+        this.listenTo(elections, 'reset', this.render);
+        elections.fetch();
+    },
+
+    render: function () {
+        var view = new ElectionView({model: elections.at(this.current_election_index)})
+        return this;
+    },
+
+    events: {
+        'click #next': 'inc_election_index'
+    },
+
+    inc_election_index: function() {
+        this.current_election_index++;
+        this.render();
+    }
 })
 
 var router = Backbone.Router.extend({
-	routes: {
-		'': 'root',
-		'elections/:id': 'year'
-	},
+    routes: {
+        '': 'root',
+        'elections/:id': 'year'
+    },
 
-	root: function(){
-		new App();
-	},
+    root: function(){
+        new App();
+    },
 
-	year: function(year) {
-		var collection = new Elections();
-		return collection.at(year);
-	}
+    year: function(year) {
+        var collection = new Elections();
+        return collection.at(year);
+    }
 });
 var r = new router();
 Backbone.history.start();
