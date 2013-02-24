@@ -7,21 +7,12 @@ var Election = Backbone.Model.extend({});
 
 var Elections = Backbone.Collection.extend({
     model: Election,
-    url: '/assets/data.json',
-
-    initialize: function() {
-    },
-
-    render: function() {
-    }
-
+    url: '/assets/data.json'
 });
-
-
-
 
 var ElectionView = Backbone.View.extend({
     wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
+    stately: $('#election'),
 
     initialize: function() {
         this.render();
@@ -30,7 +21,8 @@ var ElectionView = Backbone.View.extend({
     render: function() {
         this.update_wiki_link();
         this.update_heading();
-
+        this.reset_states();
+        this.color_parties();
         return this;
     },
 
@@ -42,12 +34,25 @@ var ElectionView = Backbone.View.extend({
         $('#year').html(this.model.get('year'));
     },
 
+    reset_states: function() {
+        $('li', this.stately).removeClass('blue red yellow other');
+    },
+
+    build_states_selector: function (array_of_states) {
+        return '.' + array_of_states.join(', .');
+    },
+
+    color_party: function(party_index, color) {
+        $(this.build_states_selector(party_index)).addClass(color);
+    },
+
+    color_parties: function() {
+        for(var party in this.model.get('parties')) {
+            this.color_party( this.model.get('parties')[party]['states'], this.model.get('parties')[party]['color']);
+        }
+    }
 
 });
-
-
-
-
 
 var App = Backbone.View.extend({
     current_election_index: 0,
@@ -60,7 +65,10 @@ var App = Backbone.View.extend({
     },
 
     render: function () {
-        var view = new ElectionView({model: elections.at(this.current_election_index)})
+        var view = new ElectionView({
+            model: elections.at(this.current_election_index),
+            election_index: this.current_election_index
+        })
         return this;
     },
 
