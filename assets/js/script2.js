@@ -13,6 +13,7 @@ var Elections = Backbone.Collection.extend({
 var ElectionView = Backbone.View.extend({
     wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
     stately: $('#election'),
+    color_classes: ['test'],
 
     initialize: function() {
         this.render();
@@ -21,6 +22,7 @@ var ElectionView = Backbone.View.extend({
     render: function() {
         this.update_wiki_link();
         this.update_heading();
+        this.build_reset_colors();
         this.reset_states();
         this.color_parties();
         return this;
@@ -34,8 +36,18 @@ var ElectionView = Backbone.View.extend({
         $('#year').html(this.model.get('year'));
     },
 
+    build_reset_colors: function() {
+        var that = this;
+        var parties = this.model.get('parties');
+        for (var i = 0; parties.length > i; i++) {
+            if((parties[i].color.length > 2) && (that.color_classes.indexOf(parties[i].color) == -1 ) ) {
+                that.color_classes.push(parties[i].color);
+            }
+        }
+    },
+
     reset_states: function() {
-        $('li', this.stately).removeClass('blue red yellow other');
+        $('li', this.stately).removeClass(this.color_classes.join(' '));
     },
 
     build_states_selector: function (array_of_states) {
@@ -57,11 +69,10 @@ var App = Backbone.View.extend({
     current_election_index: 0,
     playback: {
         id: '',
-        duration: 500,
-        status: false
+        duration: 1750,
+        status: false,
+        active_btn_class: 'dark_blue_bg'
     },
-    // I think it gets replaced by _.bind
-    that: this,
 
     el: 'body',
     initialize: function() {
@@ -112,16 +123,17 @@ var App = Backbone.View.extend({
             this.playback.status = true;
             this.play();
         }
-        // remove active button class
+        $('#play').addClass(this.playback.active_btn_class);
     },
 
     turn_play_off: function() {
         this.playback.status = false;
         clearTimeout(this.playback.id);
+      $('#play').removeClass(this.playback.active_btn_class);
     },
 
     play: function() {
-        that = this;
+        var that = this;
         this.playback.id = setInterval(function() {
             if ((that.playback.status === true) && (that.current_election_index < elections.length - 1 )) {
                 that.next();
