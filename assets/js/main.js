@@ -1,12 +1,19 @@
 require.config({
-    shim: {
-        'backbone': {
-            deps: ['underscore', 'jquery'],
-            exports: 'Backbone'
-        }
+    baseUrl: '/assets/js',
+
+    paths: {
+        // underscore: 'assets/js/components/underscore/underscore-min',
+        jquery: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+        backbone: '../js/components/backbone/backbone-min'
     },
 
-    baseUrl: '/assets/js'
+    shim: {
+        'backbone': {
+            deps: ['../js/components/underscore/underscore', 'jquery'],
+            exports: 'Backbone'
+        }
+    }
+
 });
 
 require(['views/app'], function(App) {

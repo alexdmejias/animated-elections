@@ -53,5 +53,6 @@ define(['backbone'], function(Backbone) {
             }
         }
     });
+
     return ElectionView;
 });
