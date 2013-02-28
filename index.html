@@ -10,11 +10,11 @@
 	<script type="text/template" id="template">
 		<% _.each(parties, function(party) { %>
 			<% if(party.winner) { %>
-				<h3>The winner of this election was the <%= party.name %> party.</h3>
+				<h3>The winner of this election was <%= party.candidate %> from the <%= party.name %> party with <%= party.total_votes %> electoral votes.</h3>
 			<% } %>
 
 			<% if((!party.winner) && (party.name != 'other')) { %>
-				<p>loser: <%= party.name %></p>
+				<p>loser: <%= party.candidate %> from the <%= party.name %>(<%= party.total_votes %> votes) party.</p>
 			<% } %>
 		<% }) %>
 	</script>
@@ -100,7 +100,7 @@
 				<li data-state="wy" class="wy">y</li>
 			</ul>
 
-			<h3>Other Election Details</h3>
+			<h2>Other Election Details</h2>
 			<div id="data"></div>
 
 		</div>
