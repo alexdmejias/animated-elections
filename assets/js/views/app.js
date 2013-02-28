@@ -7,8 +7,8 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
             duration: 1750,
             status: false
         },
-
         el: 'body',
+
         initialize: function() {
             elections = new Elections();
             _.bindAll(this, 'render');
@@ -21,6 +21,7 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
                 model: elections.at(this.current_election_index),
                 election_index: this.current_election_index
             });
+
             return this;
         },
 

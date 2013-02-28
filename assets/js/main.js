@@ -3,7 +3,8 @@ require.config({
 
     paths: {
         // underscore: 'assets/js/components/underscore/underscore-min',
-        jquery: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+        // jquery: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+        jquery: 'components/jquery/jquery.min',
         backbone: '../js/components/backbone/backbone-min'
     },
 
@@ -23,11 +24,11 @@ require(['views/app'], function(App) {
             '': 'root'
         },
 
-        root: function(){
+        root: function() {
             new App();
         }
     });
 
-    var r = new router();
+    r = new router();
     Backbone.history.start();
 });
