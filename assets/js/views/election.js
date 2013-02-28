@@ -2,27 +2,27 @@ define(['backbone'], function(Backbone) {
     var ElectionView = Backbone.View.extend({
         wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
         stately: $('#election'),
-        color_classes: ['test'],
+        // stores all the color classes for the parties. Used for resetting classes
+        color_classes: [],
+        template: _.template($('#template').html()),
 
         initialize: function() {
             this.render();
         },
 
         render: function() {
-            this.update_wiki_link();
-            this.update_heading();
+            this.update_ui();
             this.build_reset_colors();
-            this.reset_states();
             this.color_parties();
             return this;
         },
 
-        update_wiki_link: function() {
-            $('#wiki').attr('href', this.wiki_base + this.model.get('year'));
+        _update_data: function() {
+            $('#data').html(this.template(this.model.attributes));
         },
 
-        update_heading: function() {
-            $('#year').html(this.model.get('year'));
+        update_ui: function() {
+            this._update_data();
         },
 
         build_reset_colors: function() {
@@ -35,21 +35,22 @@ define(['backbone'], function(Backbone) {
             }
         },
 
-        reset_states: function() {
+        _reset_states: function() {
             $('li', this.stately).removeClass(this.color_classes.join(' '));
         },
 
-        build_states_selector: function (array_of_states) {
+        _build_states_selector: function (array_of_states) {
             return '.' + array_of_states.join(', .');
         },
 
-        color_party: function(party_index, color) {
-            $(this.build_states_selector(party_index)).addClass(color);
+        _color_party: function(party_index, color) {
+            $(this._build_states_selector(party_index)).addClass(color);
         },
 
         color_parties: function() {
+            this._reset_states();
             for(var party in this.model.get('parties')) {
-                this.color_party( this.model.get('parties')[party]['states'], this.model.get('parties')[party]['color']);
+                this._color_party( this.model.get('parties')[party]['states'], this.model.get('parties')[party]['color']);
             }
         }
     });

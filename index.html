@@ -7,24 +7,22 @@
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
+	<script type="text/template" id="template">
+		<% _.each(parties, function(party) { %>
+			<% if(party.winner) { %>
+				<h3>The winner of this election was the <%= party.name %> party.</h3>
+			<% } %>
 
-	<script id="data_template" type="text/x-dot-template">
-		{{~it.parties :value:index}}
-			{{? value.winner == true}}
-				<h4>The winner was {{=value.candidate}} from the {{=value.name}} party with {{=value.total_votes}} votes</h4>
-				<h5>And the loser(s)</h5>
-				{{?? value.name != "other" && value.name != "winner"}}
-					<h5>{{=value.candidate}} from the {{=value.name}} party with {{=value.total_votes}} votes</h5>
-				{{??}}
-			{{?}}
-		{{~}}
+			<% if((!party.winner) && (party.name != 'other')) { %>
+				<p>loser: <%= party.name %></p>
+			<% } %>
+		<% }) %>
 	</script>
-
 
 	<div class="row">
 		<div class="twelve columns">
 			<h1><span id="year"></span> Presidential Election <a id="wiki" href="#" rel="_blank">(wiki page)</a></h1>
-			<p id="range"></p>
+			<p id="description">The current data set starts in the year <span class="year_start"></span> and it ends in <span class="year_end"></span>. That is <span class="year_length"></span> elections and you are currently in election #<span class="year_current"></span></p>
 
 			<div class="two columns">
 				<a href="#" class="button radius" id="prev">prev</a>

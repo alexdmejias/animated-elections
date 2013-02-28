@@ -22,6 +22,8 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
                 election_index: this.current_election_index
             });
 
+            this.update_ui();
+
             return this;
         },
 
@@ -35,6 +37,27 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
 
         change_election_index: function(prev) {
             return typeof prev === 'undefined' ? this.current_election_index++: this.current_election_index--;
+        },
+
+        _update_wiki_link: function() {
+            $('#wiki').attr('href', this.wiki_base + elections.at(this.current_election_index).get('year'));
+        },
+
+        _update_description: function() {
+            $('#description').find('.year_start').text(elections.at(0).get('year')).end()
+            .find('.year_end').text(elections.at(elections.length - 1 ).get('year')).end()
+            .find('.year_length').text(elections.length).end()
+            .find('.year_current').text(this.current_election_index + 1);
+        },
+
+        _update_heading: function() {
+            $('#year').html(elections.at(this.current_election_index).get('year'));
+        },
+
+        update_ui: function() {
+            this._update_wiki_link();
+            this._update_description();
+            this._update_heading();
         },
 
         next: function() {
