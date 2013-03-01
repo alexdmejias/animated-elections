@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '/assets/js',
+    // baseUrl: '/assets/js',
 
     paths: {
         // underscore: 'assets/js/components/underscore/underscore-min',
