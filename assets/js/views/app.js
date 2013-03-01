@@ -1,7 +1,9 @@
-define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/election.js'], function(Backbone, Elections, ElectionView) {
+define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/election.js', 'jqueryui'], function(Backbone, Elections, ElectionView, simpleSlider) {
     var AppView = Backbone.View.extend({
         current_election_index: 0,
         active_btn_class: 'dark_blue_bg',
+        wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
+        slider: $("#sliderjq"),
         playback: {
             id: '',
             duration: 1750,
@@ -21,9 +23,8 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
                 model: elections.at(this.current_election_index),
                 election_index: this.current_election_index
             });
-
+            this._make_slider();
             this.update_ui();
-
             return this;
         },
 
@@ -54,6 +55,20 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
             $('#year').html(elections.at(this.current_election_index).get('year'));
         },
 
+        _make_slider: function() {
+            var that = this;
+            this.slider.slider({
+                animate: 'slow',
+                max: elections.length - 1,
+                min: 0,
+                change: function(event, ui) {
+                    that.current_election_index = ui.value;
+                    that.render();
+                }
+            });
+
+        },
+
         update_ui: function() {
             this._update_wiki_link();
             this._update_description();
@@ -64,7 +79,8 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
             // add an indicator to show they cant go in this direction anymroe
             if (this.current_election_index + 1 != elections.length) {
                 this.change_election_index();
-                this.render();
+                // this.render();
+                this.slider.slider('value', this.current_election_index);
             }
         },
 
@@ -72,7 +88,8 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
             // add an indicator to show they cant go in this direction anymore
             if (this.current_election_index !== 0 ) {
                 this.change_election_index(prev);
-                this.render();
+                // this.render();
+                this.slider.slider('value', this.current_election_index);
             }
         },
 
@@ -87,7 +104,7 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
         turn_play_off: function() {
             this.playback.status = false;
             clearTimeout(this.playback.id);
-          $('#play').removeClass(this.active_btn_class);
+            $('#play').removeClass(this.active_btn_class);
         },
 
         play: function() {
@@ -103,8 +120,9 @@ define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/ele
 
         restart: function() {
             this.turn_play_off();
-            this.current_election_index = 0;
-            this.render();
+            // this.current_election_index = 0;
+            this.slider.slider('value', 0);
+            // this.render();
         }
     });
 

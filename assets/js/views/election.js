@@ -1,6 +1,6 @@
 define(['backbone'], function(Backbone) {
     var ElectionView = Backbone.View.extend({
-        wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
+
         stately: $('#election'),
         // stores all the color classes for the parties. Used for resetting classes
         color_classes: [],

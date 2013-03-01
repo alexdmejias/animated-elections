@@ -23,7 +23,6 @@
 		<div class="twelve columns">
 			<h1><span id="year"></span> Presidential Election <a id="wiki" href="#" rel="_blank">(wiki page)</a></h1>
 			<p id="description">The current data set starts in the year <span class="year_start"></span> and it ends in <span class="year_end"></span>. That is <span class="year_length"></span> elections and you are currently in election #<span class="year_current"></span></p>
-
 			<div class="two columns">
 				<a href="#" class="button radius" id="prev">prev</a>
 			</div>
@@ -43,7 +42,26 @@
 
 			<div class="row">
 				<div class="twelve columns">
-				 	<div id="slide" class="noUiSlider"></div>
+					<style>
+					#sliderjq {
+						height: .8em;
+						position: relative;
+						text-align: left;
+						background: red;
+					}
+
+					#sliderjq a{
+						background: blue;
+						top: -.3em;
+						margin-left: -.6em;
+						width: 1.2em;
+						height: 1.2em;
+						z-index: 2;
+						position: absolute;
+					}
+					</style>
+				 	<div id="sliderjq"></div>
+					<div id="data"></div>
 				</div>
 			</div>
 			<ul class="stately" id="election">
@@ -99,10 +117,6 @@
 				<li data-state="wi" class="wi">x</li>
 				<li data-state="wy" class="wy">y</li>
 			</ul>
-
-			<h2>Other Election Details</h2>
-			<div id="data"></div>
-
 		</div>
 	</div>
 	<script data-main="assets/js/main" src="assets/js/require.js"></script>
