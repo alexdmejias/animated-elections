@@ -1,4 +1,4 @@
-define(['backbone', '/assets/js/collections/elections.js', '/assets/js/views/election.js', 'jqueryui'], function(Backbone, Elections, ElectionView, simpleSlider) {
+define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/election.js', 'jqueryui'], function(Backbone, Elections, ElectionView, simpleSlider) {
     var AppView = Backbone.View.extend({
         current_election_index: 0,
         active_btn_class: 'dark_blue_bg',

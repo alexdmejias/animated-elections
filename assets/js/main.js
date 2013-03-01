@@ -12,7 +12,7 @@ require.config({
 
     shim: {
         'backbone': {
-            deps: ['../js/components/underscore/underscore', 'jquery'],
+            deps: ['../js/components/underscore/underscore-min', 'jquery'],
             exports: 'Backbone'
         },
 
