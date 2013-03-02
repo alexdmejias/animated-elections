@@ -12,10 +12,19 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
         el: 'body',
 
         initialize: function() {
-            elections = new Elections();
-            _.bindAll(this, 'render');
-            this.listenTo(elections, 'reset', this.render);
-            elections.fetch();
+            // do a check to see if elections is undefined, if so do this block
+
+            console.log(this.options.year? this.options.year : 'nope');
+            if(typeof election !== 'undefined') {
+                elections = new Elections();
+                _.bindAll(this, 'render');
+                this.listenTo(elections, 'reset', this.render);
+                elections.fetch();
+            } else {
+                console.log('already defined');
+            }
+            // to here ^^
+            // else jusr render the view with the given index passed by the next function or the router
         },
 
         render: function () {
@@ -75,20 +84,20 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
             this._update_heading();
         },
 
-        next: function() {
+        next: function(e) {
+            e.preventDefault();
             // add an indicator to show they cant go in this direction anymroe
             if (this.current_election_index + 1 != elections.length) {
                 this.change_election_index();
-                // this.render();
                 this.slider.slider('value', this.current_election_index);
             }
+            r.navigate('year/' + elections.at(this.current_election_index).get('year'), {trigger: true});
         },
 
         prev: function() {
             // add an indicator to show they cant go in this direction anymore
             if (this.current_election_index !== 0 ) {
                 this.change_election_index(prev);
-                // this.render();
                 this.slider.slider('value', this.current_election_index);
             }
         },
