@@ -1,5 +1,25 @@
 [
 	{
+		"year": 1864,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"winner": true,
+				"candidate": "Abraham Lincoln",
+				"total_votes": 212,
+				"states": ["or", "ca", "nv", "ks", "mn", "ia", "mo", "wi", "il", "mi", "in", "oh", "wv", "pa", "md", "ny", "vt", "nh", "me", "ma", "ct", "ri"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "George B. McClellan",
+				"total_votes": 21,
+				"states": ["ky", "nj", "de"]
+			}
+		]
+	},
+	{
 		"year": 1868,
 		"parties": [
 			{
@@ -719,7 +739,7 @@
 				"color": "red",
 				"candidate": "George W. Bush",
 				"total_votes": 271,
-				"states": ["ak", "nv", "id", "mt", "wy", "ut", "az", "co", "nd", "sd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "fa", "fl", "sc", "tn", "nc", "ky", "va", "in", "oh", "wv", "nh"]
+				"states": ["ak", "nv", "id", "mt", "wy", "ut", "az", "co", "nd", "sd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "fa", "fl", "sc", "tn", "nc", "ky", "va", "in", "oh", "wv", "nh", "ga"]
 			},
 			{
 				"name": "Democratic",
@@ -739,7 +759,7 @@
 				"color": "red",
 				"candidate": "George W. Bush",
 				"total_votes": 286,
-				"states": ["id", "nv", "mt", "wy", "ut", "az", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "ms", "al", "ga", "sc", "fl", "tn", "nc", "in", "oh", "ky", "wv", "va"]
+				"states": ["id", "nv", "mt", "wy", "ut", "az", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "ms", "al", "ga", "sc", "fl", "tn", "nc", "in", "oh", "ky", "wv", "va", "ak"]
 			},
 			{
 				"name": "Democratic",
@@ -747,6 +767,46 @@
 				"candidate": "John F. Kerry",
 				"total_votes": 251,
 				"states": ["wa", "or", "ca", "mn", "wi", "il", "mi", "hi", "pa", "ny", "vt", "nh", "me", "ma", "ct", "nj", "de", "md", "ri"]
+			}
+		]
+	},
+	{
+		"year": 2008,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "John S. McCain",
+				"total_votes": 173,
+				"states": ["mt", "id", "wy", "nd", "sd", "ut", "az", "ak", "ks", "mo", "ok", "tx", "ar", "la", "ms", "al", "fa", "sc", "tn", "ky", "wv"]
+			},
+			{
+				"winner": true,
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Barack H. Obama",
+				"total_votes": 365,
+				"states": ["wa", "or", "ca", "nv", "co", "nm", "hi", "ne", "fl", "va", "nc", "mn", "ia", "wi", "il", "in", "mi", "oh", "pa", "md", "de", "nk", "ny", "ct", "ma", "ri", "nh", "vt", "me"]
+			}
+		]
+	},
+	{
+		"year": 2012,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "W. Mitt Romney",
+				"total_votes": 206,
+				"states": ["mt", "id", "wy", "nd", "sd", "ne", "ut", "az", "ak", "ks", "ok", "tx", "mo", "ar", "la", "tn", "nc", "ms", "al", "ga", "sc", "in", "ky", "wv"]
+			},
+			{
+				"winner": true,
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Barack H. Obama",
+				"total_votes": 332,
+				"states": ["wa", "or", "ca", "nv", "co", "nm", "hi", "mn", "ia", "wi", "il", "mi", "oh", "pa", "md", "de", "va", "fl", "nj", "ny", "ct", "ma", "ri", "vt", "nh", "me", "hi"]
 			}
 		]
 	}
