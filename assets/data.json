@@ -709,5 +709,45 @@
 				"states": ["wa", "or", "ca", "nv", "az", "nm", "mn", "ia", "mo", "ar", "la", "wi", "il", "mi", "oh", "ky", "tn", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "nj", "md", "de", "fl"]
 			}
 		]
+	},
+	{
+		"year": 2000,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "George W. Bush",
+				"total_votes": 271,
+				"states": ["ak", "nv", "id", "mt", "wy", "ut", "az", "co", "nd", "sd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "ms", "al", "fa", "fl", "sc", "tn", "nc", "ky", "va", "in", "oh", "wv", "nh"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Albert Gore, Jr.",
+				"total_votes": 266,
+				"states": ["wa", "or", "ca", "nm", "hi", "mn", "ia", "wi", "il", "mi", "pa", "ny", "vt", "me", "ma", "ct", "nj", "de", "md", "ri"]
+			}
+		]
+	},
+	{
+		"year": 2004,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "George W. Bush",
+				"total_votes": 286,
+				"states": ["id", "nv", "mt", "wy", "ut", "az", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "ia", "mo", "ar", "la", "ms", "al", "ga", "sc", "fl", "tn", "nc", "in", "oh", "ky", "wv", "va"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "John F. Kerry",
+				"total_votes": 251,
+				"states": ["wa", "or", "ca", "mn", "wi", "il", "mi", "hi", "pa", "ny", "vt", "nh", "me", "ma", "ct", "nj", "de", "md", "ri"]
+			}
+		]
 	}
 ]
