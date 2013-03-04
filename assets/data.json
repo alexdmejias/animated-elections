@@ -11,7 +11,7 @@
 				"states": ["al", "ar", "ca", "ct", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "mo", "ne", "nv", "nh", "nc", "oh", "pa", "ri", "sc", "tn", "vt", "wv", "wi"]
 			},
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "Horatio Seymour",
 				"total_votes": 80,
@@ -36,7 +36,7 @@
 				"states": ["al", "ca", "ct", "de", "fl", "il", "in", "ia", "ks", "me", "ma", "mi", "mn", "ms", "ne", "nv", "nh", "nj", "ny", "nc", "oh", "or", "pa", "ri", "sc", "vt", "va", "wv", "wi"]
 			},
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "Thomas A. Hendricks",
 				"total_votes": 42,
@@ -62,7 +62,7 @@
 				"states": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "la", "wi", "il", "mi", "oh", "pa", "sc", "fl", "vt", "nh", "me", "ma", "ri"]
 			},
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "Samuel J. Tilden",
 				"total_votes": 184,
@@ -82,7 +82,7 @@
 				"states": ["or", "co", "ne", "ks", "ia", "mn", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ny", "ri"]
 			},
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": "Winfield S. Hancock",
 				"total_votes": 155,
@@ -94,7 +94,7 @@
 		"year": 1884,
 		"parties": [
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"color": "blue",
 				"winner": true,
 				"candidate": " Grover Cleveland",
@@ -122,7 +122,7 @@
 				"states": ["or", "ca", "nv", "co", "ne", "ks", "mn", "ia", "wi", "il", "in", "mi", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ri"]
 			},
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"color": "blue",
 				"candidate": " Grover Cleveland",
 				"total_votes": 168,
@@ -134,7 +134,7 @@
 		"year": 1892,
 		"parties": [
 			{
-				"name": "Democatric",
+				"name": "Democratic",
 				"winner": true,
 				"color": "blue",
 				"candidate": "Grover Cleveland",
@@ -647,6 +647,66 @@
 				"candidate": "Walter F. Mondale",
 				"total_votes": 13,
 				"states": ["mn"]
+			}
+		]
+	},
+	{
+		"year": 1988,
+		"parties": [
+			{
+				"winner": true,
+				"name": "Republican",
+				"color": "red",
+				"candidate": "George Bush",
+				"total_votes": 426,
+				"states": ["ca", "ak", "nv", "id", "mt", "wy", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "mo", "ar", "la", "il", "ms", "mi", "in", "ky", "tn", "al", "oh", "ga", "fl", "sc", "nc", "va", "pa", "md", "de", "nj", "ct", "vt", "nh", "me"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "Michael S. Dukakis",
+				"total_votes": 111,
+				"states": ["wa", "or", "hi", "mn", "ia", "wi", "wv", "ny", "ma", "ri"]
+			}
+		]
+	},
+	{
+		"year": 1992,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "George Bush",
+				"total_votes": 168,
+				"states": ["id", "ut", "az", "ak", "wy", "nd", "sd", "ne", "ks", "ok", "tx", "ms", "al", "in", "fl", "sc", "nc", "va"]
+			},
+			{
+				"winner": true,
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "William J. Clinton",
+				"total_votes": 370,
+				"states": ["wa", "or", "nv", "ca", "mt", "co", "nm", "hi", "mn", "ia", "mo", "ar", "la", "wi", "il", "mi", "oh", "ky", "tn", "ga", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "nj", "de", "md"]
+			}
+		]
+	},
+	{
+		"year": 1996,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"candidate": "Robert Dole",
+				"total_votes": 159,
+				"states": ["ak", "id", "ut", "mt", "wy", "co", "nd", "sd", "ne", "ks", "ok", "tx", "in", "ms", "al", "ga", "sc", "nc", "va"]
+			},
+			{
+				"winner": true,
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "William J. Clinton",
+				"total_votes": 379,
+				"states": ["wa", "or", "ca", "nv", "az", "nm", "mn", "ia", "mo", "ar", "la", "wi", "il", "mi", "oh", "ky", "tn", "wv", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri", "nj", "md", "de", "fl"]
 			}
 		]
 	}
