@@ -14,12 +14,15 @@
 			<% } %>
 
 			<% if((!party.winner) && (party.name != 'other')) { %>
-				<p>loser: <%= party.candidate %> from the <%= party.name %>(<%= party.total_votes %> votes) party.</p>
+				<p>loser: <%= party.candidate %> from the <%= party.name %> (<%= party.total_votes %> votes) party.</p>
 			<% } %>
 		<% }) %>
 	</script>
 
-	<div class="row">
+	<div id="loader">
+		use a proper loader
+	</div>
+	<div class="row" id="content">
 		<div class="twelve columns">
 			<h1><span id="year"></span> Presidential Election <a id="wiki" href="#" rel="_blank">(wiki page)</a></h1>
 			<p id="description">The current data set starts in the year <span class="year_start"></span> and it ends in <span class="year_end"></span>. That is <span class="year_length"></span> elections and you are currently in election #<span class="year_current"></span></p>
