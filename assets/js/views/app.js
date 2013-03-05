@@ -1,30 +1,23 @@
-define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/election.js', 'jqueryui'], function(Backbone, Elections, ElectionView, simpleSlider) {
+define(['backbone', 'collections/elections.js', 'views/election.js', 'jqueryui'], function(Backbone, Elections, ElectionView, simpleSlider) {
     var AppView = Backbone.View.extend({
         current_election_index: 0,
         active_btn_class: 'dark_blue_bg',
         wiki_base: 'http://en.wikipedia.org/wiki/United_States_presidential_election,_',
         slider: $("#sliderjq"),
+        started: 0,
+        el: '#content',
         playback: {
             id: '',
             duration: 1750,
             status: false
         },
-        el: 'body',
 
         initialize: function() {
-            // do a check to see if elections is undefined, if so do this block
-
-            console.log(this.options.year? this.options.year : 'nope');
-            if(typeof election !== 'undefined') {
-                elections = new Elections();
-                _.bindAll(this, 'render');
-                this.listenTo(elections, 'reset', this.render);
-                elections.fetch();
-            } else {
-                console.log('already defined');
-            }
-            // to here ^^
-            // else jusr render the view with the given index passed by the next function or the router
+            elections = new Elections();
+            _.bindAll(this, 'render');
+            this.listenTo(elections, 'reset', this.render);
+            elections.fetch();
+            this.remove_loader();
         },
 
         render: function () {
@@ -45,8 +38,25 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
             'click #restart': 'restart'
         },
 
+        election_year: function() {
+            if (this.options.year) {
+                for(var i = 0; i < elections.models.length; i++) {
+                    if (elections.models[i].attributes.year == this.options.year) {
+                     this.current_election_index = i;
+                     this.started = 1;
+                    }
+                }
+            }
+        },
+
         change_election_index: function(prev) {
             return typeof prev === 'undefined' ? this.current_election_index++: this.current_election_index--;
+        },
+
+        remove_loader: function() {
+            $('#loader', this.content).fadeOut(function() {
+                $('#content').fadeIn();
+            });
         },
 
         _update_wiki_link: function() {
@@ -75,7 +85,6 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
                     that.render();
                 }
             });
-
         },
 
         update_ui: function() {
@@ -85,8 +94,10 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
         },
 
         next: function(e) {
-            e.preventDefault();
-            // add an indicator to show they cant go in this direction anymroe
+            if (typeof e !== 'undefined') {
+                e.preventDefault();
+            }
+
             if (this.current_election_index + 1 != elections.length) {
                 this.change_election_index();
                 this.slider.slider('value', this.current_election_index);
@@ -94,8 +105,11 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
             r.navigate('year/' + elections.at(this.current_election_index).get('year'), {trigger: true});
         },
 
-        prev: function() {
-            // add an indicator to show they cant go in this direction anymore
+        prev: function(e) {
+            if (typeof e !== 'undefined') {
+                e.preventDefault();
+            }
+
             if (this.current_election_index !== 0 ) {
                 this.change_election_index(prev);
                 this.slider.slider('value', this.current_election_index);
