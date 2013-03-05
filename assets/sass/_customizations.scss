@@ -51,9 +51,12 @@ h1{
 	}
 }
 
-
 li {
 	color: $default;
+}
+
+#content {
+	display: none;
 }
 .yellow {color: $yellow; }
 .other {color: $other; }
