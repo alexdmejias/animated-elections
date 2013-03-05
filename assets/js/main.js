@@ -1,20 +1,20 @@
 require.config({
-
     paths: {
-        jquery: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
-        backbone: '../js/components/backbone/backbone-min',
+        // jquery: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+        jquery: 'components/jquery/jquery.min',
+        underscore: 'components/underscore/underscore-min',
+        backbone: 'components/backbone/backbone-min',
         jqueryui: 'components/jqueryui/jquery-ui-1.10.1.custom.min'
     },
 
     shim: {
         'backbone': {
-            deps: ['../js/components/underscore/underscore-min', 'jquery'],
+            deps: ['underscore', 'jquery'],
             exports: 'Backbone'
         },
 
         'jqueryui': ['jquery']
     }
-
 });
 
 require(['views/app'], function(App) {
