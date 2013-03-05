@@ -1,5 +1,39 @@
 [
 	{
+		"year": 1860,
+		"parties": [
+			{
+				"name": "Republican",
+				"color": "red",
+				"winner": true,
+				"candidate": "Abraham Lincoln",
+				"total_votes": 180,
+				"states": ["or", "ca", "mn", "ia", "wi", "il", "mi", "in", "oh", "pa", "ny", "vt", "nh", "me", "ma", "ct", "ri"]
+			},
+			{
+				"name": "Democratic",
+				"color": "blue",
+				"candidate": "George B. McClellan",
+				"total_votes": 21,
+				"states": ["tx", "ar", "la", "ms", "al", "ga", "sc", "nc", "md", "de", "fl", "nj"]
+			},
+			{
+				"name": "Constitutional Union",
+				"color": "yellow",
+				"candidate": "John Bell",
+				"total_votes": 39,
+				"states": ["ky", "tn", "wv", "tn", "va"]
+			},
+			{
+				"name": "Democratic",
+				"color": "dark_blue",
+				"candidate": "Stephen A. Douglas",
+				"total_votes": 12,
+				"states": ["mo"]
+			}
+		]
+	},
+	{
 		"year": 1864,
 		"parties": [
 			{
