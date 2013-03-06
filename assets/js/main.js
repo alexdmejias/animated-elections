@@ -37,7 +37,5 @@ require(['views/app'], function(App) {
     });
 
     r = new router();
-    Backbone.history.start({
-        // pushState: true
-    });
+    Backbone.history.start();
 });

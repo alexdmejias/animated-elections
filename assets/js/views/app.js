@@ -33,7 +33,7 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
 
             this.set_current_year(this.current_index);
             this.set_slider_val(this.current_index);
-            console.log(this.current_index);
+            // console.log(this.current_index);
 
             this.update_ui();
 
