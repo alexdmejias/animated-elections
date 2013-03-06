@@ -633,7 +633,7 @@
 				"color": "red",
 				"candidate": "Richard M. Nixon",
 				"total_votes": 520,
-				"states": ["or", "ca", "ak", "id", "nv", "mt", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "ia", "mo", "wi", "il", "in", "oh", "ky", "tn", "fl", "sc", "nc", "va", "nj", "vt", "nh", "wa", "tx", "mn", "mi", "wv", "pa", "ny", "ct", "me", "md", "hi", "ar", "la", "ms", "al", "ga"]
+				"states": ["or", "ca", "ak", "id", "nv", "mt", "ut", "az", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "ia", "mo", "wi", "il", "in", "oh", "ky", "tn", "fl", "sc", "nc", "va", "nj", "vt", "nh", "wa", "tx", "mn", "mi", "wv", "pa", "ny", "ct", "me", "md", "hi", "ar", "la", "ms", "al", "ga", "ri"]
 			},
 			{
 				"name": "Democratic",

@@ -22,22 +22,22 @@ require(['views/app'], function(App) {
     var router = Backbone.Router.extend({
         routes: {
             '': 'root',
-            'year(/:year)/': 'year'
+            'year(/:year)': 'year'
         },
 
         root: function() {
             new App();
         },
 
-        year: function() {
+        year: function(year) {
             new App({
-                // year: year
+                year: year
             });
         }
     });
 
     r = new router();
     Backbone.history.start({
-        pushState: true
+        // pushState: true
     });
 });
