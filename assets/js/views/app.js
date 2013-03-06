@@ -48,7 +48,6 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
             'click #restart': 'restart'
         },
 
-        //make name more descriptive
         detect_election_year: function() {
             if (this.options.year) {
                 for(var i = 0; i < elections.models.length; i++) {
