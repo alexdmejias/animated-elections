@@ -109,7 +109,7 @@ define(['backbone', 'assets/js/collections/elections.js', 'assets/js/views/elect
             var that = this;
             this.slider.slider({
                 value: this.current_index,
-                max: elections.length - 1,
+                max: elections.length,
                 min: 0,
                 stop: function(event, ui) {
                     that.current_index = ui.value;
