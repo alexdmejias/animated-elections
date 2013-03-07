@@ -1,17 +1,19 @@
 @import "vars";
 
-@import "settings";
 
 // should get ride of foundation, barely using it
-@import "compass/css3";
-@import "foundation/settings";
-@import "foundation/functions/all";
-@import "foundation/mixins/clearfix";
-@import "foundation/mixins/css-triangle";
-@import "modular-scale";
-@import "foundation/common/globals";
-@import "foundation/components/grid";
-@import "foundation/components/modules/buttons";
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+// @import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+// @import "modular-scale";
+// @import "foundation/common/globals";
+// @import "foundation/components/grid";
+// @import "foundation/components/modules/buttons";
+@import "compiled";
+// @import "buttons";
+@import "settings";
 
 @import "setup";
 
