@@ -1,9 +1,11 @@
 body{
-	width: 100%;
+	width: $bodyWidth;
+	margin: 0 auto;
 	font-family: "helvetica neue", arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	padding: 0 0 40px;
 	background: url('../images/background.png') repeat repeat;
+	overflow-y: scroll;
 }
 
 h1{
@@ -16,26 +18,29 @@ h1{
 	}
 }
 
-#next {
-	float: right;
+#description {
+	font-size: 13px;
+
 }
+
 
 #sliderjq {
 	margin-top: 20px;
 	background: $light_blue;
 	border: 1px solid $blue;
 	border-radius: 6px;
-	height: .8em;
+	height: 8px;
 	position: relative;
 	text-align: left;
 	a{
 		background: $blue;
 		border: 1px solid $dark_blue;
-		border-radius: 6px;
+		border-radius: 10px;
 		width: 1.2em;
 		height: 1.2em;
 		position: absolute;
-		top: -.3em;
+		top: -7px;
+		// margin-left: -.6em;
 
 		&:hover {
 			background: $dark_blue;
@@ -43,13 +48,6 @@ h1{
 	}
 }
 
-.playback {
-	ul {
-		margin: 0 auto;
-		width: 52%;
-		color: #fff;
-	}
-}
 
 li {
 	color: $default;

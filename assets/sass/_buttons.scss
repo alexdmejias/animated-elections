@@ -1,0 +1,53 @@
+.button-group {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+  div {
+    float: left;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  div:first-child, div:last-child {
+    width: 20%;
+  }
+
+  div:last-child a {
+    float: right;
+  }
+
+  a {
+    width: auto;
+    background: $blue;
+    border-radius: 5px;
+    border: 1px solid $dark_blue;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px 11px;
+    text-decoration: none;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+      background-color: $dark_blue;
+    }
+  }
+
+  .middle {
+    text-align: center;
+
+  }
+
+}

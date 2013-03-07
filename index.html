@@ -20,32 +20,26 @@
 	</script>
 
 	<div id="loader">Loading... </div>
-	<div class="row" id="content">
-		<div class="twelve columns">
-			<h1><span id="year"></span> Presidential Election <a id="wiki" href="#" rel="_blank">(wiki page)</a></h1>
-			<p id="description">The current data set starts in the year <span class="year_start"></span> and it ends in <span class="year_end"></span>. That is <span class="year_length"></span> elections and you are currently in election #<span class="year_current"></span> of this set.</p>
-			<div class="two columns">
-				<a href="#" class="button radius" id="prev">prev</a>
-			</div>
+	<div id="content">
+		<h1><span id="year"></span> Presidential Election <a id="wiki" href="#" rel="_blank">(wiki page)</a></h1>
 
-			<div class="eight columns playback">
-				<ul class="button-group radius">
-					<li><a href="#" class="button radius" id="stop">pause</a></li>
-					<li><a href="#" class="button radius" id="restart">restart</a></li>
-					<li><a href="#" class="button radius" id="play">play</a></li>
-				</ul>
+		<div class="button-group">
+			<div>
+				<a href="#" class="" id="prev">Prev</a>
 			</div>
+			<div class="middle">
+				<a href="#" class="" id="pause">Pause</a>
+				<a href="#" class="" id="restart">Restart</a>
+				<a href="#" class="" id="play">Play</a>
+			</div>
+			<div>
+				<a href="#" class="" id="next">Next</a>
+			</div>
+		</div>
 
-			<div class="two columns">
-				<a href="#" class="button radius" id="next">next</a>
-			</div>
+	 	<div id="sliderjq"></div>
 
-			<div class="row">
-				<div class="twelve columns">
-				 	<div id="sliderjq"></div>
-					<div id="data"></div>
-				</div>
-			</div>
+		<figure>
 			<ul class="stately" id="election">
 				<li data-state="al" class="al">A</li>
 				<li data-state="ak" class="ak">B</li>
@@ -99,7 +93,11 @@
 				<li data-state="wi" class="wi">x</li>
 				<li data-state="wy" class="wy">y</li>
 			</ul>
-		</div>
+			<figcaption>
+				<div id="data"></div>
+				<span id="description">The current data set starts in the year <span class="year_start"></span> and it ends in <span class="year_end"></span>. That is <span class="year_length"></span> elections and you are currently in election #<span class="year_current"></span> of this set.</span>
+			</figcaption>
+		</figure>
 	</div>
 	<script data-main="assets/js/main.js" src="assets/js/require.js"></script>
 </body>
